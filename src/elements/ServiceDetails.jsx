@@ -34,8 +34,8 @@ class ServiceDetails extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">WEBSITE DEVELOPMENT</h2>
-                                    <p>Fresh From The Press Discription</p>
+                                    <h2 className="title theme-gradient">Food Mart</h2>
+                                    <p>Check Cashing & Auto Registration</p>
                                 </div>
                             </div>
                         </div>
@@ -59,15 +59,16 @@ class ServiceDetails extends Component{
                                             </div>
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
-                                                    <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
-                                                    <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p>
-                                                    <h4 className="title">Proceess of metel</h4>
+                                                    <p>Located within the Food Mart is our Check Cashing & Auto Registration Service Center which offers payroll & tax refund check cashing along with auto registration and renewals. Now you can register your vehicle, grab a money order and send/receive Moneygrams all from one convenient location while you shop!</p>
+                                                    <h4 className="title">Service Center Hours</h4>
                                                     <ul className="liststyle">
-                                                        <li>Yet this above sewed flirted opened ouch</li>
-                                                        <li>Goldfinch realistic sporadic ingenuous</li>
-                                                        <li>Abominable this abidin far successfully then like piquan</li>
-                                                        <li>Risus commodo viverra</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                                        <li><strong>Monday:</strong> 10am - 6pm</li>
+                                                        <li><strong>Tuesday:</strong> 10am - 6pm</li>
+                                                        <li><strong>Wednesday:</strong> 10am - 6pm</li>
+                                                        <li><strong>Thursday:</strong> 10am - 6pm</li>
+                                                        <li><strong>Friday:</strong> 10am - 6pm</li>
+                                                        <li><strong>Saturday:</strong> 10am - 5pm</li>
+                                                        <li><strong>Sunday:</strong> CLosed</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -78,14 +79,13 @@ class ServiceDetails extends Component{
                                         <div className="row sercice-details-content align-items-center">
                                             <div className="col-lg-6 col-12 order-2 order-lg-1">
                                                 <div className="details mt_md--30 mt_sm--30">
-                                                    <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
-                                                    <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p>
-                                                    <h4 className="title">Our Working Process</h4>
+                                                    <p>At Santiago Food Mart, we pride ourselves on being your “One Stop Pit Stop” for convenience items and fuel. We provide the products  and services that you’d expect to find … we provide quality gasoline products, diesel and a wide selection of drinks, snacks, boyd’s coffee, lottery and so much more.</p>
+                                                    {/* <h4 className="title">Our Working Process</h4>
                                                     <ul className="liststyle">
                                                         <li>Yet this above sewed flirted opened ouch</li>
                                                         <li>Goldfinch realistic sporadic ingenuous</li>
                                                         <li>Abominable this abidin far successfully then like piquan</li>
-                                                    </ul>
+                                                    </ul> */}
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-12 order-1 order-lg-2">

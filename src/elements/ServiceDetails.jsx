@@ -79,6 +79,7 @@ class ServiceDetails extends Component{
                                         <div className="row sercice-details-content align-items-center">
                                             <div className="col-lg-6 col-12 order-2 order-lg-1">
                                                 <div className="details mt_md--30 mt_sm--30">
+                                                    <h4 className="title">What We Do</h4>
                                                     <p>At Santiago Food Mart, we pride ourselves on being your “One Stop Pit Stop” for convenience items and fuel. We provide the products  and services that you’d expect to find … we provide quality gasoline products, diesel and a wide selection of drinks, snacks, boyd’s coffee, lottery and so much more.</p>
                                                     {/* <h4 className="title">Our Working Process</h4>
                                                     <ul className="liststyle">

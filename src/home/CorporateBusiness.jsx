@@ -118,15 +118,22 @@ class CorporateBusiness extends Component {
   }
   render() {
     var namesItemOne = [
-      "The Philosophy Of business analytics",
-      "Fast-Track Your business",
-      "Lies And Damn Lies About business",
-      "The Ultimate Deal On business",
+      "Monday: 10am - 6pm",
+      "Tuesday: 10am - 6pm",
+      "Wednesday: 10am - 6pm",
+      "Thursday: 10am - 6pm",
+      "Friday: 10am - 6pm",
+      "Saturday: 10am - 5pm",
+      "Sunday: Closed"
     ];
     var namesItemTwo = [
-      "Proof That business Really Works",
-      "Here Is What You Should Do For Your business",
-      "The Hidden Mystery Behind business",
+      "Monday: 10am - 6pm",
+      "Tuesday: 10am - 6pm",
+      "Wednesday: 10am - 6pm",
+      "Thursday: 10am - 6pm",
+      "Friday: 10am - 6pm",
+      "Saturday: 10am - 6pm",
+      "Sunday: 10am - 6pm"
     ];
 
     const PostList = BlogContent.slice(0, 3);
@@ -367,7 +374,7 @@ class CorporateBusiness extends Component {
                     </p>
                   </div>
                   <div className="mt--30">
-                    <h4>Lorem ipsum dolor sit.</h4>
+                    <h4>Food Mart Service Hours</h4>
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (
@@ -379,7 +386,7 @@ class CorporateBusiness extends Component {
                     </ul>
                   </div>
                   <div className="mt--30">
-                    <h4>Lorem ipsum dolor sit.</h4>
+                    <h4>Car Wash Hours</h4>
                     <ul className="list-style--1">
                       {namesItemTwo.map((name, index) => {
                         return (

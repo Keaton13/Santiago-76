@@ -32,7 +32,7 @@ class ServiceDetails3 extends Component {
 
         {/* Start Breadcrump Area */}
         <div
-          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"
+          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--32"
           data-black-overlay="5"
         >
           <div className="container">
@@ -61,7 +61,7 @@ class ServiceDetails3 extends Component {
                         <div className="thumb">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-01.png"
+                            src="/assets/images/featured/corporate-02.jpg"
                             alt="Service Images"
                           />
                         </div>

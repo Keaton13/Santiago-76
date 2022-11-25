@@ -206,7 +206,7 @@ class CorporateBusiness extends Component {
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
-                  <a className="text-center" href="/service-details">
+                  <a className="text-center">
                     <div className="service service__style--2">
                       <div className="icon">{val.icon}</div>
                       <div className="content">
@@ -236,7 +236,7 @@ class CorporateBusiness extends Component {
                   </p>
                   <div className="service-btn">
                     <a className="btn-transparent rn-btn-dark" href="/service">
-                      <span className="text">Request Custom Service</span>
+                      <span className="text"></span>
                     </a>
                   </div>
                 </div>
@@ -291,7 +291,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-4.png"
+                    src="/assets/images/about/about-4.jpg"
                     alt="About Images"
                   />
                 </div>
@@ -301,7 +301,7 @@ class CorporateBusiness extends Component {
                   <div className="section-title">
                     <h2 className="title">Checkout Our New Store!</h2>
                     <p>
-                      Complete remodel finished in 2022 for a new and exciting look.
+                      Complete re-model finished in 2022 for a new and exciting look.
                     </p>
                   </div>
                   <div className="accordion-wrapper mt--30">
@@ -402,7 +402,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail position-relative">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-3.png"
+                    src="/assets/images/about/about-3.jpg"
                     alt="About Images"
                   />
                   <ModalVideo
@@ -441,7 +441,7 @@ class CorporateBusiness extends Component {
         {/* End Pricing Tbale Area  */}
 
         {/* Start Blog Area */}
-        <div className="rn-blog-area pt--120 pb--80 bg_color--1">
+        {/* <div className="rn-blog-area pt--120 pb--80 bg_color--1">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-12">
@@ -483,7 +483,7 @@ class CorporateBusiness extends Component {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Blog Area */}
 
         {/* Start call To Action  */}

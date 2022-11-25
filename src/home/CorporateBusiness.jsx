@@ -23,11 +23,11 @@ import BrandOne from "../elements/Brand";
 const SlideList = [
   {
     textPosition: "text-right",
-    bgImage: "bg_image--32",
+    bgImage: "bg_image--30",
     category: "",
     title: "Santiago 76",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Contact Us",
     buttonLink: "/contact",
   },
@@ -43,7 +43,7 @@ const SlideList = [
   },
   {
     textPosition: "text-right",
-    bgImage: "bg_image--32",
+    bgImage: "bg_image--33",
     category: "",
     title: "Car Wash",
     description:
@@ -53,7 +53,7 @@ const SlideList = [
   },
   {
     textPosition: "text-left",
-    bgImage: "bg_image--31",
+    bgImage: "bg_image--32",
     category: "",
     title: "Wireless Store",
     description:
@@ -299,10 +299,9 @@ class CorporateBusiness extends Component {
               <div className="col-lg-6">
                 <div className="about-inner inner">
                   <div className="section-title">
-                    <h2 className="title">Working Process</h2>
+                    <h2 className="title">Checkout Our New Store!</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Enim exercitationem impedit iure quia quo recusandae?
+                      Complete remodel finished in 2022 for a new and exciting look.
                     </p>
                   </div>
                   <div className="accordion-wrapper mt--30">

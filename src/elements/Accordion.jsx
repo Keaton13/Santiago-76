@@ -28,7 +28,7 @@ class Accordion01 extends Component {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Tactics That Can Help Your Business Grow.
+                            New Bathrooms 
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>

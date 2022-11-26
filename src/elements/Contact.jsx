@@ -56,7 +56,7 @@ class Contact extends Component{
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Contact With Phone Number</h4>
-                                        <p><a href="tel:+057 254 365 456">1-714-541-3883</a></p>
+                                        <p>Phone: <a href="tel:+057 254 365 456">1-714-541-3883</a></p>
                                         <p>fax: <a href="tel:+057 254 365 456">1-714-541-3883</a></p>
 
                                     </div>

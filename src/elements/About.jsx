@@ -4,205 +4,161 @@ import Breadcrumb from "../elements/common/Breadcrumb";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import BrandTwo from "../elements/BrandTwo";
-import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
-import ScrollToTop from 'react-scroll-up';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
+class About extends Component {
+  render() {
+    let title = "About",
+      description =
+        "Santiago Food Mart and Auto Wash first opened for business on May 24th 1996 originally branded as a Shell Station along with a full service car wash.  The property & business is family owned and operated with most of the property acquired in 1899.  Where the Convenience Store and fuel islands now reside was a large Victorian home on the corner of Santiago and 17th St.  One of the current owners was raised in this house and played as a young girl on the property watching the 5 freeway being built and modernized in the early 50’s.";
+    return (
+      <React.Fragment>
+        <PageHelmet pageTitle="About" />
 
-class About extends Component{
-    render(){
-        let title = 'About',
-        description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.';
-        return(
-            <React.Fragment>
-                <PageHelmet pageTitle='About' />
+        <Header
+          headertransparent="header--transparent"
+          colorblack="color--black"
+          logoname="logo.png"
+        />
+        {/* Start Breadcrump Area */}
+        <Breadcrumb title={"Santiago History"} />
+        {/* End Breadcrump Area */}
 
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
-                {/* Start Breadcrump Area */}
-                <Breadcrumb title={'Santiago History'}   />
-                {/* End Breadcrump Area */}
-
-                {/* Start About Area  */}
-                <div className="rn-about-area ptb--120 bg_color--1">
-                    <div className="rn-about-wrapper">
-                        <div className="container">
-                            <div className="row row--35 align-items-center">
-                                <div className="col-lg-5">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-3.jpg" alt="About Images"/>
-                                    </div>
-                                </div>
-                                <div className="col-lg-7">
-                                    <div className="about-inner inner">
-                                        <div className="section-title">
-                                            <h2 className="title">{title}</h2>
-                                            <p className="description">{description}</p>
-                                        </div>
-                                        <div className="row mt--30">
-                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                                <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                                                <div className="about-us-list">
-                                                    <h3 className="title">Who we are</h3>
-                                                    <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        {/* Start About Area  */}
+        <div className="rn-about-area ptb--120 bg_color--1">
+          <div className="rn-about-wrapper">
+            <div className="container">
+              <div className="row row--35 align-items-center">
+                <div className="col-lg-5">
+                  <div className="thumbnail">
+                    <img
+                      className="w-100"
+                      src="/assets/images/about/about-3.jpg"
+                      alt="About Images"
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-7">
+                  <div className="about-inner inner">
+                    <div className="section-title">
+                      <h2 className="title">{title}</h2>
+                      <p className="description">{description}</p>
+                      <p className="description">
+                        The mid 1950’s brought the end of the residential
+                        property and a new Unocal station was built on the
+                        family homestead. The early 1970’s brought more change
+                        and Santiago Liquor was established and flourished for
+                        many years until it was time to replace. As the early
+                        1990’s began older service stations were being razed and
+                        newer stations were being built with new modern
+                        underground gas tanks and updated convenience stores.
+                        This lead the family to re-develop the corner to modern
+                        standards. Construction took place as the 5 freeway was
+                        being modernized at the 17th St Exit.
+                      </p>
+                      <p className="description">
+                        The location of the Auto Wash many years ago had a few
+                        different businesses located on it and the last one to
+                        reside was a car rental location. The entrance into the
+                        Auto Wash in 1992 once was a house accessed via
+                        Poinsettia St. that was purchased to create more space
+                        and access for the new development and entrance
+                        requirements for the Auto Wash. In the mid-2000s a
+                        Wireless store was started to replace the car wash
+                        boutique area.
+                      </p>
+                      <p></p>
                     </div>
+                  </div>
                 </div>
-                {/* End About Area  */}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End About Area  */}
 
-                 {/* Start CounterUp Area */}
-                 <div className="rn-counterup-area pb--120 bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <CounterOne />
-                    </div>
+        {/* Start CounterUp Area */}
+        <div className="rn-counterup-area pb--120 bg_color--1">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <h3 className="fontWeight500">Our Fun Facts</h3>
                 </div>
-                {/* End CounterUp Area */}
+              </div>
+            </div>
+            <CounterOne />
+          </div>
+        </div>
+        {/* End CounterUp Area */}
 
-                {/* Start Finding Us Area  */}
-                <div className="rn-finding-us-area rn-finding-us bg_color--1">
-                    <div className="inner">
-                        <div className="content-wrapper">
-                            <div className="content">
-                                <h4 className="theme-gradient">Find Your Work Now</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that.</p>
-                                <a className="rn-btn btn-white" href="/about">Get Started</a>
-                            </div>
-                        </div>
-                        <div className="thumbnail">
-                            <div className="image">
-                                <img src="/assets/images/about/finding-us-01.png" alt="Finding Images"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Finding Us Area  */}
+        {/* Start Finding Us Area  */}
+        <div className="rn-finding-us-area rn-finding-us bg_color--1">
+          <div className="inner">
+            <div className="content-wrapper">
+              <div className="content">
+                <h4 className="theme-gradient">A Message To Customers</h4>
+                <p>
+                  We are always trying to stay relevant and progressive with the
+                  times and look forward to what the future brings on. Thank You
+                  - The Krieger Family
+                </p>
+                <a className="rn-btn btn-white" href="/contact">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <div className="thumbnail contain-Content">
+              <div className="image">
+                <img
+                  src="/assets/images/featured/corporate-6.jpg"
+                  alt="Finding Images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Finding Us Area  */}
 
-                {/* Start Team Area  */}
-                <div className="rn-team-area bg_color--1 ptb--120">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title service-style--3 text-center mb--25">
-                                    <h2 className="title">Skilled Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-01.jpg" alt="Blog Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">Jone Due</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* End Single Team  */}
+        {/* Start Team Area  */}
+      
+        {/* End Team Area  */}
 
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-02.jpg" alt="Blog Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">BM. Alamin</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* End Single Team  */}
+        {/* Start Testimonial Area */}
+        <div className="rn-testimonial-area bg_color--5 ptb--120">
+          <div className="container">
+            <Testimonial />
+          </div>
+        </div>
+        {/* End Testimonial Area */}
 
-                            {/* Start Single Team  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/team/team-03.jpg" alt="Blog Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">Jone Due</h4>
-                                        <p className="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul className="social-icon" >
-                                        <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                                        <li><a href="http://linkedin.com/"><FaLinkedinIn /></a></li>
-                                        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* End Single Team  */}
+        {/* Start Brand Area */}
+        <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <BrandTwo />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Brand Area */}
 
-                        </div>
-                    </div>
-                </div>
-                {/* End Team Area  */}
+        {/* Start Back To Top */}
+        <div className="backto-top">
+          <ScrollToTop showUnder={160}>
+            <FiChevronUp />
+          </ScrollToTop>
+        </div>
+        {/* End Back To Top */}
 
-                {/* Start Testimonial Area */}
-                <div className="rn-testimonial-area bg_color--5 ptb--120">
-                    <div className="container">
-                        <Testimonial />
-                    </div>
-                </div>
-                {/* End Testimonial Area */}
-
-                {/* Start Brand Area */}
-                <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <BrandTwo />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Brand Area */}
-
-                {/* Start Back To Top */}
-                <div className="backto-top">
-                    <ScrollToTop showUnder={160}>
-                        <FiChevronUp />
-                    </ScrollToTop>
-                </div>
-                {/* End Back To Top */}
-                
-                <Footer />
-
-            </React.Fragment>
-        )
-    }
+        <Footer />
+      </React.Fragment>
+    );
+  }
 }
-export default About
+export default About;

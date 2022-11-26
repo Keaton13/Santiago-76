@@ -61,7 +61,7 @@ class HeaderFive extends Component {
               <div className="col-lg-3 col-md-4 col-6">
                 <div className="header-left">
                   <div className="logo">
-                    <a href="/">{logoUrl}</a>
+                    {/* <a href="/">{logoUrl}</a> */}
                   </div>
                 </div>
               </div>

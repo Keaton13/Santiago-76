@@ -68,7 +68,7 @@ class Header extends Component {
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">
-              <a href="/">{logoUrl}</a>
+              {/* <a href="/">{logoUrl}</a> */}
             </div>
           </div>
           <div className="header-right">
@@ -92,7 +92,7 @@ class Header extends Component {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about">History</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>

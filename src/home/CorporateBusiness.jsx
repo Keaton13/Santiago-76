@@ -23,11 +23,11 @@ import BrandOne from "../elements/Brand";
 const SlideList = [
   {
     textPosition: "text-right",
-    bgImage: "bg_image--32",
+    bgImage: "bg_image--30",
     category: "",
     title: "Santiago 76",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Contact Us",
     buttonLink: "/contact",
   },
@@ -43,7 +43,7 @@ const SlideList = [
   },
   {
     textPosition: "text-right",
-    bgImage: "bg_image--32",
+    bgImage: "bg_image--33",
     category: "",
     title: "Car Wash",
     description:
@@ -53,7 +53,7 @@ const SlideList = [
   },
   {
     textPosition: "text-left",
-    bgImage: "bg_image--31",
+    bgImage: "bg_image--32",
     category: "",
     title: "Wireless Store",
     description:
@@ -78,7 +78,7 @@ const ServiceListOne = [
   },
   {
     icon: <FiUsers />,
-    title: "DMV",
+    title: "Auto Registration",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
@@ -118,22 +118,22 @@ class CorporateBusiness extends Component {
   }
   render() {
     var namesItemOne = [
-      "Monday: 10am - 6pm",
-      "Tuesday: 10am - 6pm",
-      "Wednesday: 10am - 6pm",
-      "Thursday: 10am - 6pm",
-      "Friday: 10am - 6pm",
+      "Monday: 10am - 7pm",
+      "Tuesday: 10am - 7pm",
+      "Wednesday: 10am - 7pm",
+      "Thursday: 10am - 7pm",
+      "Friday: 10am - 7pm",
       "Saturday: 10am - 5pm",
       "Sunday: Closed"
     ];
     var namesItemTwo = [
-      "Monday: 10am - 6pm",
-      "Tuesday: 10am - 6pm",
-      "Wednesday: 10am - 6pm",
-      "Thursday: 10am - 6pm",
-      "Friday: 10am - 6pm",
-      "Saturday: 10am - 6pm",
-      "Sunday: 10am - 6pm"
+      "Monday: 8am - 6pm",
+      "Tuesday: 8am - 6pm",
+      "Wednesday: 8am - 6pm",
+      "Thursday: 8am - 6pm",
+      "Friday: 8am - 6pm",
+      "Saturday: 8am - 6pm",
+      "Sunday: 8am - 6pm"
     ];
 
     const PostList = BlogContent.slice(0, 3);
@@ -206,7 +206,7 @@ class CorporateBusiness extends Component {
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
-                  <a className="text-center" href="/service-details">
+                  <a className="text-center">
                     <div className="service service__style--2">
                       <div className="icon">{val.icon}</div>
                       <div className="content">
@@ -236,7 +236,7 @@ class CorporateBusiness extends Component {
                   </p>
                   <div className="service-btn">
                     <a className="btn-transparent rn-btn-dark" href="/service">
-                      <span className="text">Request Custom Service</span>
+                      <span className="text"></span>
                     </a>
                   </div>
                 </div>
@@ -273,14 +273,14 @@ class CorporateBusiness extends Component {
         {/* End Featured Service Area  */}
 
         {/* Start Counterup Area */}
-        <div
+        {/* <div
           className="counterup-area pb--80 pt--40 bg_image bg_image--17 theme-text-white"
           data-black-overlay="7"
         >
           <div className="container">
             <CounterOne />
           </div>
-        </div>
+        </div> */}
         {/* End Counterup Area */}
 
         {/* Start About Area  */}
@@ -291,7 +291,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-4.png"
+                    src="/assets/images/about/about-4.jpg"
                     alt="About Images"
                   />
                 </div>
@@ -299,10 +299,9 @@ class CorporateBusiness extends Component {
               <div className="col-lg-6">
                 <div className="about-inner inner">
                   <div className="section-title">
-                    <h2 className="title">Working Process</h2>
+                    <h2 className="title">Checkout Our New Store!</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Enim exercitationem impedit iure quia quo recusandae?
+                      Complete re-model finished in 2022 for a new and exciting look.
                     </p>
                   </div>
                   <div className="accordion-wrapper mt--30">
@@ -310,7 +309,7 @@ class CorporateBusiness extends Component {
                   </div>
                   <div className="about-button mt--50">
                     <a className="rn-button-style--2 btn-solid" href="/about">
-                      See how it works
+                      See our history
                     </a>
                   </div>
                 </div>
@@ -374,7 +373,7 @@ class CorporateBusiness extends Component {
                     </p>
                   </div>
                   <div className="mt--30">
-                    <h4>Food Mart Service Hours</h4>
+                    <h4>Check Chashing / Auto Registration Hours</h4>
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (
@@ -403,7 +402,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail position-relative">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-3.png"
+                    src="/assets/images/about/about-3.jpg"
                     alt="About Images"
                   />
                   <ModalVideo
@@ -442,7 +441,7 @@ class CorporateBusiness extends Component {
         {/* End Pricing Tbale Area  */}
 
         {/* Start Blog Area */}
-        <div className="rn-blog-area pt--120 pb--80 bg_color--1">
+        {/* <div className="rn-blog-area pt--120 pb--80 bg_color--1">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-12">
@@ -484,7 +483,7 @@ class CorporateBusiness extends Component {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Blog Area */}
 
         {/* Start call To Action  */}

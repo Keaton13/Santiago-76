@@ -29,7 +29,7 @@ class ServiceDetails extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"  data-black-overlay="5">
+                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--30"  data-black-overlay="5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -54,7 +54,7 @@ class ServiceDetails extends Component{
                                         <div className="row sercice-details-content pb--80 align-items-center">
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
-                                                    <img className="w-100" src="/assets/images/service/service-01.png" alt="Service Images"/>
+                                                    <img className="w-100" src="/assets/images/about/about-4.jpg" alt="Service Images"/>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-12">
@@ -91,7 +91,7 @@ class ServiceDetails extends Component{
                                             </div>
                                             <div className="col-lg-6 col-12 order-1 order-lg-2">
                                                 <div className="thumb position-relative">
-                                                    <img className="w-100" src="/assets/images/service/service-02.png" alt="Service Images"/>
+                                                    <img className="w-100" src="/assets/images/service/service-2.jpg" alt="Service Images"/>
                                                     <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
                                                     <button className="video-popup" onClick={this.openModal}><span className="play-icon"></span></button>
                                                 </div>

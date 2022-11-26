@@ -29,7 +29,6 @@ ul {
                 line-height: 10;
             }
             img {
-                opacity: 0.7;
                 transition: 0.3s;
                 max-height: 110px;
                 max-width: 150px;
@@ -40,13 +39,9 @@ ul {
                 }
             }
             &:hover{
-                background-color: $theme-color;
+                background-color: #fff;
                 transform: scale(1.1);
                 border-radius: 6px;
-                img{
-                    opacity: 1;
-                    filter: brightness(0) invert(1);
-                }
             }
             
         }

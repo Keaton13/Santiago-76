@@ -28,12 +28,12 @@ class Contact extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                  {/* Start Breadcrump Area */}
-                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17"  data-black-overlay="6">
+                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--29"  data-black-overlay="6">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Our Contact</h2>
+                                    <h2 className="title theme-gradient">Contact Information</h2>
                                     {/* <p>Leave us a message! </p> */}
                                 </div>
                             </div>
@@ -47,23 +47,25 @@ class Contact extends Component{
                 <div className="rn-contact-top-area ptb--120 bg_color--5">
                     <div className="container">
                        
-                        <div className="row">
+                        <div className="row justify-content-center">
                             {/* Start Single Address  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div className="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
                                 <div className="rn-address">
                                     <div className="icon">
                                         <FiHeadphones />
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Contact With Phone Number</h4>
-                                        <p><a href="tel:+057 254 365 456">1-714-541-3883</a></p>
+                                        <p>Phone: <a href="tel:+057 254 365 456">1-714-541-3883</a></p>
+                                        <p>fax: <a href="tel:+057 254 365 456">1-714-541-3883</a></p>
+
                                     </div>
                                 </div>
                             </div>
                             {/* End Single Address  */}
 
                             {/* Start Single Address  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50">
+                            {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50">
                                 <div className="rn-address">
                                     <div className="icon">
                                         <FiMail />
@@ -74,12 +76,12 @@ class Contact extends Component{
                                         <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* End Single Address  */}
 
                             {/* Start Single Address  */}
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50">
-                                <div className="rn-address">
+                                <div className="rn-address text-center">
                                     <div className="icon">
                                         <FiMapPin />
                                     </div>
@@ -97,9 +99,9 @@ class Contact extends Component{
                 {/* End Contact Top Area  */}
 
                 {/* Start Contact Page Area  */}
-                <div className="rn-contact-page ptb--120 bg_color--1">
+                {/* <div className="rn-contact-page ptb--120 bg_color--1">
                     <ContactTwo />
-                </div>
+                </div> */}
                 {/* End Contact Page Area  */}
 
                 {/* Start Contact Map  */}

@@ -29,7 +29,7 @@ class ServiceDetails2 extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"  data-black-overlay="5">
+                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -54,17 +54,19 @@ class ServiceDetails2 extends Component{
                                         <div className="row sercice-details-content pb--80 align-items-center">
                                             <div className="col-lg-6 col-12">
                                                 <div className="thumb">
-                                                    <img className="w-100" src="/assets/images/service/service-01.png" alt="Service Images"/>
+                                                    <img className="w-100" src="/assets/images/featured/corporate-6.jpg" alt="Service Images"/>
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <p>We welcome you to Santiago Hand Wash. Since opening in 1996, we have grown to provide our customers with the best quality hand car wash experience. We take pride in our quality of services and on the importance of our customers expectations. In addition to all of our exterior and full service hand washes, we are your one-stop detail center. All of our customers are provided with the best quality and value in name brand wash services using companies such as Meguiar’s,™ Blue Coral ,™ Magic Clay ,™ Lexol ™ and ArmorAll .™</p>
                                                     <p>In addition, we utilize micro fiber towels, which give our detail services it’s extra streak-free shine. No longer do you need to fear other car wash lingo and overpriced packages. At Santiago Hand Wash we simplify and take away the unknown to fully satisfy you. Come find out what Santiago Hand Wash can provide you, and your vehicles. </p>
-                                                    <h4 className="title">Open Daily</h4>
+                                                    <h4 className="title">Car Wash Hours</h4>
                                                     <ul className="liststyle">
-                                                        <li>8am - 5pm</li>
-                                                        <li>Weather Permiting*</li>
+                                                        <li>8am - 5pm - Winter</li>
+                                                        <li>8am - 6pm - Summer</li>
+                                                        <li>7 Days a Week</li>
+                                                        <li>Weather Permited*</li>
                                                         {/* <li>Abominable this abidin far successfully then like piquan</li>
                                                         <li>Risus commodo viverra</li>
                                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li> */}

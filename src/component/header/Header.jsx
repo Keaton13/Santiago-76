@@ -68,7 +68,7 @@ class Header extends Component {
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">
-              <a href="/">{logoUrl}</a>
+              {/* <a href="/">{logoUrl}</a> */}
             </div>
           </div>
           <div className="header-right">
@@ -92,21 +92,13 @@ class Header extends Component {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about">History</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>
-            <div className="header-btn">
-              <a
-                className="rn-btn"
-                href="https://themeforest.net/checkout/from_item/25457315?license=regular"
-              >
-                <span>buy now</span>
-              </a>
-            </div>
             {/* Start Humberger Menu  */}
             <div className="humberger-menu d-block d-lg-none pl--20">
               <span

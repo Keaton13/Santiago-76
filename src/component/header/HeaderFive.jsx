@@ -61,7 +61,7 @@ class HeaderFive extends Component {
               <div className="col-lg-3 col-md-4 col-6">
                 <div className="header-left">
                   <div className="logo">
-                    <a href="/">{logoUrl}</a>
+                    {/* <a href="/">{logoUrl}</a> */}
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ class HeaderFive extends Component {
                         </ul>
                       </li>
                       <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">History</Link>
                       </li>
                       <li>
                         <Link to="/contact">Contact</Link>
@@ -95,12 +95,6 @@ class HeaderFive extends Component {
                     </ul>
                   </nav>
                   <div className="header-btn">
-                    <a
-                      className="rn-btn"
-                      href="https://themeforest.net/checkout/from_item/25457315?license=regular"
-                    >
-                      <span>buy now</span>
-                    </a>
                   </div>
                   {/* Start Humberger Menu  */}
                   <div className="humberger-menu d-block d-lg-none pl--20">

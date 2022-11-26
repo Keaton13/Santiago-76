@@ -17,23 +17,22 @@ class Accordion01 extends Component {
                 <AccordionItem >
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Your Business Skills But Never Stop Improving.
+                        Redesigned Check Cashing
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloribus eaque error est explicabo facilis fugit incidunt iste iure non nostrum officia, perspiciatis quidem quisquam rerum.</p>
+                        <p></p>
                     </AccordionItemPanel>
                 </AccordionItem>
 
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Tactics That Can Help Your Business Grow.
+                            New Bathrooms 
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, porro, rerum. A amet, dolorum esse laboriosam Accusantium cum laborum nulla possimus. Repellat!
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -41,12 +40,11 @@ class Accordion01 extends Component {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            The Secret of Successful Business
+                        Re-Faced Coolers
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Ad aliquam dicta enim excepturi explicabo in ipsum iste iure natus perferendis placeat quae similique tempore totam veniam vero!
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -54,12 +52,11 @@ class Accordion01 extends Component {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            How To Start A Business With Business
+                            All New Floors and Racks
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Facilis fugiat hic ipsam iusto laudantium libero maiores minima molestiae mollitia repellat rerum sunt ullam voluptates? Perferendis, suscipit.
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>

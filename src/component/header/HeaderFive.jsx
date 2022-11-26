@@ -87,7 +87,7 @@ class HeaderFive extends Component {
                         </ul>
                       </li>
                       <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">History</Link>
                       </li>
                       <li>
                         <Link to="/contact">Contact</Link>

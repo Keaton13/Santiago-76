@@ -87,28 +87,28 @@ class ServiceDetails3 extends Component {
                             shopping experience that exceeds our customer’s
                             expectations.
                           </p>
-                          <h4 className="title">Hours of Operation</h4>
+                          <h4 className="title">Cell Phone Store Hours</h4>
                           <ul className="liststyle">
                             <li>
-                              <strong>Monday:</strong> 10am - 6pm
+                              <strong>Monday:</strong> 10am - 5pm
                             </li>
                             <li>
-                              <strong>Tuesday:</strong> 10am - 6pm
+                              <strong>Tuesday:</strong> 10am - 5pm
                             </li>
                             <li>
-                              <strong>Wednesday:</strong> 10am - 6pm
+                              <strong>Wednesday:</strong> 10am - 5pm
                             </li>
                             <li>
-                              <strong>Thursday:</strong> 10am - 6pm
+                              <strong>Thursday:</strong> 10am - 5pm
                             </li>
                             <li>
-                              <strong>Friday:</strong> 10am - 6pm
+                              <strong>Friday:</strong> 10am - 5pm
                             </li>
                             <li>
                               <strong>Saturday:</strong> 10am - 5pm
                             </li>
                             <li>
-                              <strong>Sunday:</strong> 10am - 5pm
+                              <strong>Sunday:</strong> 10am - 2pm
                             </li>
                           </ul>
                         </div>
@@ -120,7 +120,7 @@ class ServiceDetails3 extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
-                        <h4 className="title">Boost Mobile iphones available.</h4>
+                        <h4 className="title">Boost Mobile iPhones available.</h4>
                           <p>
                             but the majority have suffered alteration in some
                             form, by injected humour, or randomised words which

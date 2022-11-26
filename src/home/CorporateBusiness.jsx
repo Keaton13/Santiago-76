@@ -78,7 +78,7 @@ const ServiceListOne = [
   },
   {
     icon: <FiUsers />,
-    title: "DMV",
+    title: "Auto Registration",
     description:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
@@ -118,22 +118,22 @@ class CorporateBusiness extends Component {
   }
   render() {
     var namesItemOne = [
-      "Monday: 10am - 6pm",
-      "Tuesday: 10am - 6pm",
-      "Wednesday: 10am - 6pm",
-      "Thursday: 10am - 6pm",
-      "Friday: 10am - 6pm",
+      "Monday: 10am - 7pm",
+      "Tuesday: 10am - 7pm",
+      "Wednesday: 10am - 7pm",
+      "Thursday: 10am - 7pm",
+      "Friday: 10am - 7pm",
       "Saturday: 10am - 5pm",
       "Sunday: Closed"
     ];
     var namesItemTwo = [
-      "Monday: 10am - 6pm",
-      "Tuesday: 10am - 6pm",
-      "Wednesday: 10am - 6pm",
-      "Thursday: 10am - 6pm",
-      "Friday: 10am - 6pm",
-      "Saturday: 10am - 6pm",
-      "Sunday: 10am - 6pm"
+      "Monday: 8am - 6pm",
+      "Tuesday: 8am - 6pm",
+      "Wednesday: 8am - 6pm",
+      "Thursday: 8am - 6pm",
+      "Friday: 8am - 6pm",
+      "Saturday: 8am - 6pm",
+      "Sunday: 8am - 6pm"
     ];
 
     const PostList = BlogContent.slice(0, 3);
@@ -273,14 +273,14 @@ class CorporateBusiness extends Component {
         {/* End Featured Service Area  */}
 
         {/* Start Counterup Area */}
-        <div
+        {/* <div
           className="counterup-area pb--80 pt--40 bg_image bg_image--17 theme-text-white"
           data-black-overlay="7"
         >
           <div className="container">
             <CounterOne />
           </div>
-        </div>
+        </div> */}
         {/* End Counterup Area */}
 
         {/* Start About Area  */}
@@ -309,7 +309,7 @@ class CorporateBusiness extends Component {
                   </div>
                   <div className="about-button mt--50">
                     <a className="rn-button-style--2 btn-solid" href="/about">
-                      See how it works
+                      See our history
                     </a>
                   </div>
                 </div>
@@ -373,7 +373,7 @@ class CorporateBusiness extends Component {
                     </p>
                   </div>
                   <div className="mt--30">
-                    <h4>Food Mart Service Hours</h4>
+                    <h4>Check Chashing / Auto Registration Hours</h4>
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (

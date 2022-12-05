@@ -26,7 +26,7 @@ class Brand extends Component {
             <img src="/assets/images/brand/monster.png" alt="Logo Images" />
           </li>
           <li>
-            <img src="/assets/images/brand/meg-logo.webp" alt="Logo Images" />
+            <img src="/assets/images/brand/Coke.webp" alt="Logo Images" />
           </li>
         </ul>
       </React.Fragment>

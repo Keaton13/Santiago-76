@@ -140,7 +140,7 @@ class CorporateBusiness extends Component {
 
     return (
       <Fragment>
-        <Helmet pageTitle="Corporate Business" />
+        <Helmet pageTitle="Santiago 76" />
 
         {/* Start Header Area  */}
         <Header
@@ -284,7 +284,7 @@ class CorporateBusiness extends Component {
         {/* End Counterup Area */}
 
         {/* Start About Area  */}
-        <div className="rn-about-area ptb--120 bg_color--5">
+        <div className="rn-about-area ptb--120 bg_color--1">
           <div className="container">
             <div className="row row--35 align-items-center">
               <div className="col-lg-6">
@@ -320,7 +320,7 @@ class CorporateBusiness extends Component {
         {/* End About Area  */}
 
         {/* Start Team Area  */}
-        <div className="rn-team-area ptb--120 bg_color--1">
+        {/* <div className="rn-team-area ptb--120 bg_color--1">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -341,7 +341,7 @@ class CorporateBusiness extends Component {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Team Area  */}
 
         {/* Start About Area  */}

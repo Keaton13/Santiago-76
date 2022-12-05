@@ -34,9 +34,9 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>Quick Link</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="/portfolio">Work</a></li>
-                                                    <li><a href="/about">About</a></li>
-                                                    <li><a href="/contact">Let's Talk</a></li>
+                                                    <li><a href="/">Home</a></li>
+                                                    <li><a href="/about">History</a></li>
+                                                    <li><a href="/contact">Contact Us</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -44,19 +44,18 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                                             <div className="footer-link">
-                                                <h4>Say Hello</h4>
+                                                <h4>Say Hello!</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="mailto:admin@example.com">admin@example.com</a></li>
-                                                    <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                                    <li><a href="mailto:admin@example.com">Phone: 1-714-541-3883</a></li>
                                                 </ul>
 
-                                                <div className="social-share-inner">
+                                                {/* <div className="social-share-inner">
                                                     <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
                                                         {SocialShare.map((val , i) => (
                                                             <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
                                                         ))}
                                                     </ul>
-                                                </div> 
+                                                </div>  */}
                                             </div>
                                         </div>
                                         {/* End Single Widget  */}

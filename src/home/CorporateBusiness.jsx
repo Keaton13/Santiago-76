@@ -36,8 +36,7 @@ const SlideList = [
     bgImage: "bg_image--31",
     category: "",
     title: "Food Mart",
-    description:
-      "There are many variations of passages but the majority have suffered alteration.",
+    description:"",
     buttonText: "Read More",
     buttonLink: "/service-details",
   },
@@ -47,7 +46,7 @@ const SlideList = [
     category: "",
     title: "Car Wash",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Read More",
     buttonLink: "/service-details2",
   },
@@ -57,7 +56,7 @@ const SlideList = [
     category: "",
     title: "Wireless Store",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Read More",
     buttonLink: "/service-details3",
   },

@@ -36,8 +36,7 @@ const SlideList = [
     bgImage: "bg_image--31",
     category: "",
     title: "Food Mart",
-    description:
-      "There are many variations of passages but the majority have suffered alteration.",
+    description:"",
     buttonText: "Read More",
     buttonLink: "/service-details",
   },
@@ -47,7 +46,7 @@ const SlideList = [
     category: "",
     title: "Car Wash",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Read More",
     buttonLink: "/service-details2",
   },
@@ -57,7 +56,7 @@ const SlideList = [
     category: "",
     title: "Wireless Store",
     description:
-      "There are many variations of passages but the majority have suffered alteration.",
+      "",
     buttonText: "Read More",
     buttonLink: "/service-details3",
   },
@@ -402,7 +401,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail position-relative">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-3.jpg"
+                    src="/assets/images/about/about-1.png"
                     alt="About Images"
                   />
                   <ModalVideo

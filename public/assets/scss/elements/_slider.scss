@@ -713,6 +713,7 @@ Slider Default Button And Dot STyle
             top: 50%;
             transform: translateY(-50%);
             z-index: 2;
+            background-color: #f16539;
             transition: 0.5s;
             opacity: 1;
             width: 68px;
@@ -736,7 +737,6 @@ Slider Default Button And Dot STyle
             }
             &::before {
                 line-height: 1;
-                opacity: 0.4;
                 position: relative;
                 top: -2px;
                 transition: 0.5s;

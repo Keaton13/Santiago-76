@@ -10,10 +10,7 @@ class Testimonial extends Component{
                             <TabPanel>
                                 <div className="rn-testimonial-content text-center">
                                     <div className="inner">
-                                        <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
-                                    </div>
-                                    <div className="author-info">
-                                        <h6><span>Aklima </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                        <p>"Your One Stop Pit Stop"</p>
                                     </div>
                                 </div>
                             </TabPanel>
@@ -92,7 +89,7 @@ class Testimonial extends Component{
                                 </div>
                             </TabPanel>
                             
-                            <TabList className="testimonial-thumb-wrapper">
+                            {/* <TabList className="testimonial-thumb-wrapper">
                                 <Tab>
                                     <div className="testimonial-thumbnai">
                                         <div className="thumb">
@@ -149,7 +146,7 @@ class Testimonial extends Component{
                                         </div>
                                     </div>
                                 </Tab>
-                            </TabList>
+                            </TabList> */}
                         </Tabs>
                     </div>
                 </div>

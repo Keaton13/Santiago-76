@@ -401,7 +401,7 @@ class CorporateBusiness extends Component {
                 <div className="thumbnail position-relative">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-3.jpg"
+                    src="/assets/images/about/about-1.png"
                     alt="About Images"
                   />
                   <ModalVideo

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
 import Slider from "react-slick";
-import { slideSlick } from "../page-demo/script";
+import { slideSlick, slideSlick2,  } from "../page-demo/script";
 import BlogContent from "../elements/blog/BlogContent";
 import Header from "../component/header/HeaderFive";
 import FooterTwo from "../component/footer/FooterTwo";
@@ -26,8 +26,7 @@ const SlideList = [
     bgImage: "bg_image--30",
     category: "",
     title: "Santiago 76",
-    description:
-      "",
+    description: "",
     buttonText: "Contact Us",
     buttonLink: "/contact",
   },
@@ -36,7 +35,7 @@ const SlideList = [
     bgImage: "bg_image--31",
     category: "",
     title: "Food Mart",
-    description:"",
+    description: "",
     buttonText: "Read More",
     buttonLink: "/service-details",
   },
@@ -45,8 +44,7 @@ const SlideList = [
     bgImage: "bg_image--33",
     category: "",
     title: "Car Wash",
-    description:
-      "",
+    description: "",
     buttonText: "Read More",
     buttonLink: "/service-details2",
   },
@@ -55,10 +53,24 @@ const SlideList = [
     bgImage: "bg_image--32",
     category: "",
     title: "Wireless Store",
-    description:
-      "",
+    description: "",
     buttonText: "Read More",
     buttonLink: "/service-details3",
+  },
+];
+
+const SlideList2 = [
+  {
+    bgImage: "bg_image--26",
+  },
+  {
+    bgImage: "bg_image--25",
+  },
+  {
+    bgImage: "bg_image--24",
+  },
+  {
+    bgImage: "bg_image--23",
   },
 ];
 
@@ -67,19 +79,19 @@ const ServiceListOne = [
     icon: <FiCast />,
     title: "Check Cashing",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "Easy and convenient, get money when you need it. Checks cashed as low as 1.25%.  Moneygram wire transfer and money orders also available.",
   },
   {
     icon: <FiLayers />,
     title: "Boost Mobile",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "Keep more money in your pocket thanks to awesome phone deals on Boostmobile, Located inside Santiago Hand Wash building.",
   },
   {
     icon: <FiUsers />,
     title: "Auto Registration",
     description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "Renew, replace, or transfer your vehicle registration and avoid a trip to the DMV.  Located inside Santiago Food Mart.",
   },
 ];
 
@@ -123,7 +135,7 @@ class CorporateBusiness extends Component {
       "Thursday: 10am - 7pm",
       "Friday: 10am - 7pm",
       "Saturday: 10am - 5pm",
-      "Sunday: Closed"
+      "Sunday: Closed",
     ];
     var namesItemTwo = [
       "Monday: 8am - 6pm",
@@ -132,7 +144,7 @@ class CorporateBusiness extends Component {
       "Thursday: 8am - 6pm",
       "Friday: 8am - 6pm",
       "Saturday: 8am - 6pm",
-      "Sunday: 8am - 6pm"
+      "Sunday: 8am - 6pm",
     ];
 
     const PostList = BlogContent.slice(0, 3);
@@ -287,10 +299,10 @@ class CorporateBusiness extends Component {
           <div className="container">
             <div className="row row--35 align-items-center">
               <div className="col-lg-6">
-                <div className="thumbnail">
+                <div className="thumbnail mt-3 h-75">
                   <img
                     className="w-100"
-                    src="/assets/images/about/about-4.jpg"
+                    src="/assets/images/about/about-8.jpg"
                     alt="About Images"
                   />
                 </div>
@@ -300,7 +312,8 @@ class CorporateBusiness extends Component {
                   <div className="section-title">
                     <h2 className="title">Checkout Our New Store!</h2>
                     <p>
-                      Complete re-model finished in 2022 for a new and exciting look.
+                      Complete re-model finished in 2022 for a new and exciting
+                      look.
                     </p>
                   </div>
                   <div className="accordion-wrapper mt--30">
@@ -311,12 +324,66 @@ class CorporateBusiness extends Component {
                       See our history
                     </a>
                   </div>
+                  {/* <div className="thumbnail mt--50">
+                    <img
+                      className="w-100"
+                      src="/assets/images/about/about-4.jpg"
+                      alt="About Images"
+                    />
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/* End About Area  */}
+
+        {/* Start New Store Image Slider */}
+        <div className="slider-wrapper">
+          <div className="slider-activation w-75 m-auto">
+            <Slider className="rn-slick-dot dot-light" {...slideSlick2}>
+              {SlideList2.map((value, index) => (
+                <div
+                  className={`slide slide-style-2 slider-box-content without-overlay d-flex align-items-center justify-content-center bg_image ${value.bgImage}`}
+                  key={index}
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <div className={`inner ${value.textPosition}`}>
+                          {value.category ? <span>{value.category}</span> : ""}
+                          {value.title ? (
+                            <h1 className="title">{value.title}</h1>
+                          ) : (
+                            ""
+                          )}
+                          {value.description ? (
+                            <p className="description">{value.description}</p>
+                          ) : (
+                            ""
+                          )}
+                          {value.buttonText ? (
+                            <div className="slide-btn">
+                              <a
+                                className="rn-button-style--2 btn-solid"
+                                href={`${value.buttonLink}`}
+                              >
+                                {value.buttonText}
+                              </a>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        {/* End New Store Image Slider */}
 
         {/* Start Team Area  */}
         {/* <div className="rn-team-area ptb--120 bg_color--1">
@@ -386,6 +453,9 @@ class CorporateBusiness extends Component {
                   <div className="mt--30">
                     <h4>Car Wash Hours</h4>
                     <ul className="list-style--1">
+                      <li>
+                        <strong>Winter Hours: 8am - 5pm (weather permitting)</strong>
+                      </li>
                       {namesItemTwo.map((name, index) => {
                         return (
                           <li key={index}>

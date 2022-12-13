@@ -11,6 +11,7 @@ class Testimonial extends Component{
                                 <div className="rn-testimonial-content text-center">
                                     <div className="inner">
                                         <p>"Your One Stop Pit Stop"</p>
+                                        <h6> - Santiago 76</h6>
                                     </div>
                                 </div>
                             </TabPanel>

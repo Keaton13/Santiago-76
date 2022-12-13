@@ -103,6 +103,17 @@ export const slideSlick = {
     adaptiveHeight: true
 };
 
+export const slideSlick2 = {
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    arrows: true,
+    fade: true,
+    easing: "fade",
+    adaptiveHeight: true
+};
+
 export const innerPageDemo = {
     infinite: true,
     slidesToShow: 3,

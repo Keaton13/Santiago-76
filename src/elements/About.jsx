@@ -4,11 +4,37 @@ import Breadcrumb from "../elements/common/Breadcrumb";
 import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import BrandTwo from "../elements/BrandTwo";
+import Slider from "react-slick";
+import { slideSlick2 } from "../page-demo/script";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
+
+const SlideList2 = [
+  {
+    bgImage: "bg_image--22",
+  },
+  {
+    bgImage: "bg_image--21",
+  },
+  {
+    bgImage: "bg_image--20",
+  },
+  {
+    bgImage: "bg_image--19",
+  },
+  {
+    bgImage: "bg_image--18",
+  },
+  {
+    bgImage: "bg_image--17",
+  },
+  // {
+  //   bgImage: "bg_image--16",
+  // },
+];
 
 class About extends Component {
   render() {
@@ -81,8 +107,55 @@ class About extends Component {
         </div>
         {/* End About Area  */}
 
+        {/* Start New Store Image Slider */}
+        <div className="slider-wrapper">
+          <div className="slider-activation w-75 m-auto">
+            <Slider className="rn-slick-dot dot-light" {...slideSlick2}>
+              {SlideList2.map((value, index) => (
+                <div
+                  className={`slide slide-style-2 slider-box-content without-overlay d-flex align-items-center justify-content-center bg_image ${value.bgImage}`}
+                  key={index}
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <div className={`inner ${value.textPosition}`}>
+                          {value.category ? <span>{value.category}</span> : ""}
+                          {value.title ? (
+                            <h1 className="title">{value.title}</h1>
+                          ) : (
+                            ""
+                          )}
+                          {value.description ? (
+                            <p className="description">{value.description}</p>
+                          ) : (
+                            ""
+                          )}
+                          {value.buttonText ? (
+                            <div className="slide-btn">
+                              <a
+                                className="rn-button-style--2 btn-solid"
+                                href={`${value.buttonLink}`}
+                              >
+                                {value.buttonText}
+                              </a>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        {/* End New Store Image Slider */}
+
         {/* Start CounterUp Area */}
-        <div className="rn-counterup-area pb--120 bg_color--1">
+        <div className="rn-counterup-area pb--120 bg_color--1 mt--50">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -97,15 +170,14 @@ class About extends Component {
         {/* End CounterUp Area */}
 
         {/* Start Finding Us Area  */}
-        <div className="rn-finding-us-area rn-finding-us bg_color--1">
+        <div className="rn-finding-us-area rn-finding-us bg_color--1 ">
           <div className="inner">
             <div className="content-wrapper">
               <div className="content">
                 <h4 className="theme-gradient">A Message To Customers</h4>
                 <p>
                   We are always trying to stay relevant and progressive with the
-                  times and look forward to what the future brings on. Thank You
-                  - The Krieger Family
+                  times and look forward to what the future brings on.
                 </p>
                 <a className="rn-btn btn-white" href="/contact">
                   Contact Us
@@ -125,7 +197,7 @@ class About extends Component {
         {/* End Finding Us Area  */}
 
         {/* Start Team Area  */}
-      
+
         {/* End Team Area  */}
 
         {/* Start Testimonial Area */}

@@ -60,7 +60,7 @@ class ServiceDetails extends Component{
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <p>Located within the Food Mart is our Check Cashing & Auto Registration Service Center which offers payroll & tax refund check cashing along with auto registration and renewals. Now you can register your vehicle, grab a money order and send/receive Moneygrams all from one convenient location while you shop!</p>
-                                                    <h4 className="title">Service Center Hours</h4>
+                                                    <h4 className="title">Check Cashing</h4>
                                                     <ul className="liststyle">
                                                         <li><strong>Monday:</strong> 10am - 6pm</li>
                                                         <li><strong>Tuesday:</strong> 10am - 6pm</li>
@@ -68,7 +68,7 @@ class ServiceDetails extends Component{
                                                         <li><strong>Thursday:</strong> 10am - 6pm</li>
                                                         <li><strong>Friday:</strong> 10am - 6pm</li>
                                                         <li><strong>Saturday:</strong> 10am - 5pm</li>
-                                                        <li><strong>Sunday:</strong> CLosed</li>
+                                                        <li><strong>Sunday:</strong> Closed</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -80,7 +80,7 @@ class ServiceDetails extends Component{
                                             <div className="col-lg-6 col-12 order-2 order-lg-1">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <h4 className="title">What We Do</h4>
-                                                    <p>At Santiago Food Mart, we pride ourselves on being your “One Stop Pit Stop” for convenience items and fuel. We provide the products  and services that you’d expect to find … we provide quality gasoline products, diesel and a wide selection of drinks, snacks, boyd’s coffee, lottery and so much more.</p>
+                                                    <p>At Santiago Food Mart, we open 24 hours a day 7 days a week. We pride ourselves on being your “One Stop Pit Stop” for convenience items and fuel. We provide the products  and services that you’d expect to find … we provide quality gasoline products, diesel and a wide selection of drinks, snacks, boyd’s coffee, lottery and so much more.</p>
                                                     {/* <h4 className="title">Our Working Process</h4>
                                                     <ul className="liststyle">
                                                         <li>Yet this above sewed flirted opened ouch</li>
@@ -93,7 +93,7 @@ class ServiceDetails extends Component{
                                                 <div className="thumb position-relative">
                                                     <img className="w-100" src="/assets/images/service/service-2.jpg" alt="Service Images"/>
                                                     <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
-                                                    <button className="video-popup" onClick={this.openModal}><span className="play-icon"></span></button>
+                                                    {/* <button className="video-popup" onClick={this.openModal}><span className="play-icon"></span></button> */}
                                                 </div>
                                             </div>
                                         </div>

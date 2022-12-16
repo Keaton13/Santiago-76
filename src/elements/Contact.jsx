@@ -65,7 +65,7 @@ class Contact extends Component {
                       Phone: <a href="tel:+057 254 365 456">1-714-541-3883</a>
                     </p>
                     <p>
-                      fax: <a href="tel:+057 254 365 456">1-714-541-3883</a>
+                      Fax: <a href="tel:+057 254 365 456">1-714-541-3781</a>
                     </p>
                   </div>
                 </div>

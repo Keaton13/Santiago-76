@@ -100,7 +100,7 @@ const starndardService = [
     image: "01",
     title: "Food Mart",
     description:
-      "Inside the food mart we have Check Cashing and Auto Registration",
+      "Inside the food mart we have Check Cashing, Money Gram and Auto Registration",
   },
   {
     image: "02",
@@ -242,8 +242,8 @@ class CorporateBusiness extends Component {
                 <div className="section-title">
                   <h2 className="title">Services</h2>
                   <p>
-                    We do it all from hand wash car wash, check cashing,
-                    wireless store and DMV services all in one location!
+                    We do it all! From Hand Wash, Check Cashing,
+                    Wireless Store and Auto Registration all in one location.
                   </p>
                   <div className="service-btn">
                     <a className="btn-transparent rn-btn-dark" href="/service">
@@ -480,12 +480,12 @@ class CorporateBusiness extends Component {
                     videoId="ZOoVOfieAF8"
                     onClose={() => this.setState({ isOpen: false })}
                   />
-                  <button
+                  {/* <button
                     className="video-popup position-top-center theme-color"
                     onClick={this.openModal}
                   >
                     <span className="play-icon"></span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

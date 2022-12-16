@@ -76,17 +76,6 @@ class ServiceDetails3 extends Component {
                             Aguilar can help you choose the perfect rate plan
                             and phone for your family, and or your employees.
                           </p>
-                          <p>
-                            We have an unmatched variety of accessories all in
-                            one friendly location from Bluetooth® devices,
-                            chargers, cords and affordable rate plans including
-                            international re-charge. We are located inside the
-                            Santiago Hand Wash building in an easy-to-find
-                            destination for all of your wireless needs 7 days a
-                            week. Santiago Wireless is committed to providing a
-                            shopping experience that exceeds our customer’s
-                            expectations.
-                          </p>
                           <h4 className="title">Cell Phone Store Hours</h4>
                           <ul className="liststyle">
                             <li>
@@ -121,18 +110,16 @@ class ServiceDetails3 extends Component {
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
                         <h4 className="title">Boost Mobile iPhones available.</h4>
-                          <p>
-                            but the majority have suffered alteration in some
-                            form, by injected humour, or randomised words which
-                            don't look even slightly believable. If you are
-                            going to use a passage of Lorem Ipsum. You need to
-                            be sure there isn't anything embarrassing
-                          </p>
-                          <p>
-                            hidden in the middle of text. All the Lorem Ipsum
-                            generators tend toitrrepeat predefined chunks.
-                            Necessary, making this the first true generator on
-                            the Internet.
+                        <p>
+                            We have an unmatched variety of accessories all in
+                            one friendly location from Bluetooth® devices,
+                            chargers, cords and affordable rate plans including
+                            international re-charge. We are located inside the
+                            Santiago Hand Wash building in an easy-to-find
+                            destination for all of your wireless needs 7 days a
+                            week. Santiago Wireless is committed to providing a
+                            shopping experience that exceeds our customer’s
+                            expectations.
                           </p>
                         </div>
                       </div>
@@ -140,7 +127,7 @@ class ServiceDetails3 extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-02.png"
+                            src="/assets/images/service/service-3.png"
                             alt="Service Images"
                           />
                           <ModalVideo
@@ -149,12 +136,12 @@ class ServiceDetails3 extends Component {
                             videoId="ZOoVOfieAF8"
                             onClose={() => this.setState({ isOpen: false })}
                           />
-                          <button
+                          {/* <button
                             className="video-popup"
                             onClick={this.openModal}
                           >
                             <span className="play-icon"></span>
-                          </button>
+                          </button> */}
                         </div>
                       </div>
                     </div>

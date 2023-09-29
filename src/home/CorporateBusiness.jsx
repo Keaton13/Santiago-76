@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
 import Slider from "react-slick";
-import { slideSlick, slideSlick2,  } from "../page-demo/script";
+import { slideSlick, slideSlick2 } from "../page-demo/script";
 import BlogContent from "../elements/blog/BlogContent";
 import Header from "../component/header/HeaderFive";
 import FooterTwo from "../component/footer/FooterTwo";
@@ -242,8 +242,8 @@ class CorporateBusiness extends Component {
                 <div className="section-title">
                   <h2 className="title">Services</h2>
                   <p>
-                    We do it all! From Hand Wash, Check Cashing,
-                    Wireless Store and Auto Registration all in one location.
+                    We do it all! From Hand Wash, Check Cashing, Wireless Store
+                    and Auto Registration all in one location.
                   </p>
                   <div className="service-btn">
                     <a className="btn-transparent rn-btn-dark" href="/service">
@@ -439,7 +439,7 @@ class CorporateBusiness extends Component {
                     </p>
                   </div>
                   <div className="mt--30">
-                    <h4>Check Chashing / Auto Registration Hours</h4>
+                    <h3>Check Chashing / Auto Registration Hours</h3>
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (
@@ -451,18 +451,32 @@ class CorporateBusiness extends Component {
                     </ul>
                   </div>
                   <div className="mt--30">
-                    <h4>Car Wash Hours</h4>
+                    <h3 className="mb-0">Car Wash Hours</h3>
+                    <h6 className="mb-1">(Weather Permitting)</h6>
                     <ul className="list-style--1">
-                      <li>
-                        <strong>Winter Hours: 8am - 5pm (weather permitting)</strong>
+                      {/* <li>
+                        <strong>
+                          Winter Hours: 8am - 5pm (Last Car at 4:30pm)
+                        </strong>
                       </li>
-                      {namesItemTwo.map((name, index) => {
+                      <li>
+                        <strong>Summer Hours 8am-6pm (Last Car at 5:30pm)</strong>
+                      </li> */}
+                      <li>
+                      <h5 className="mb-0 mt-3">Winter Hours</h5>
+                        <FiCheck />8am - 5pm (Last Car at 4:30pm) 
+                      </li>
+                      <li>
+                        <h5 className="mb-0"> Summer Hours</h5>
+                        <FiCheck />8am-6pm (Last Car at 5:30pm)
+                      </li>
+                      {/* {namesItemTwo.map((name, index) => {
                         return (
                           <li key={index}>
                             <FiCheck /> {name}
                           </li>
                         );
-                      })}
+                      })} */}
                     </ul>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ class ServiceDetails extends Component{
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
                                     <h2 className="title theme-gradient">Food Mart</h2>
-                                    <p>Check Cashing & Auto Registration</p>
+                                    <p className="text-white">Check Cashing & Auto Registration</p>
                                 </div>
                             </div>
                         </div>

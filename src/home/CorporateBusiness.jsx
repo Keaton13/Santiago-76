@@ -439,7 +439,7 @@ class CorporateBusiness extends Component {
                     </p>
                   </div>
                   <div className="mt--30">
-                    <h3>Check Chashing / Auto Registration Hours</h3>
+                    <h3>Check Cashing / Auto Registration Hours</h3>
                     <ul className="list-style--1">
                       {namesItemOne.map((name, index) => {
                         return (

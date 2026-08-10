@@ -81,9 +81,9 @@ class HeaderFive extends Component {
                           <li>
                             <Link to="/service-details2">Hand Wash</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link to="/service-details3">Wireless</Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li>

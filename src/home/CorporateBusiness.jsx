@@ -48,15 +48,15 @@ const SlideList = [
     buttonText: "Read More",
     buttonLink: "/service-details2",
   },
-  {
-    textPosition: "text-left",
-    bgImage: "bg_image--32",
-    category: "",
-    title: "Wireless Store",
-    description: "",
-    buttonText: "Read More",
-    buttonLink: "/service-details3",
-  },
+  // {
+  //   textPosition: "text-left",
+  //   bgImage: "bg_image--32",
+  //   category: "",
+  //   title: "Wireless Store",
+  //   description: "",
+  //   buttonText: "Read More",
+  //   buttonLink: "/service-details3",
+  // },
 ];
 
 const SlideList2 = [
@@ -77,13 +77,13 @@ const SlideList2 = [
 const ServiceListOne = [
   {
     icon: <FiCast />,
-    title: "Check Cashing",
+    title: "Food Mart",
     description:
       "Easy and convenient, get money when you need it. Checks cashed as low as 1.25%.  Moneygram wire transfer and money orders also available.",
   },
   {
     icon: <FiLayers />,
-    title: "Boost Mobile",
+    title: "Car Wash",
     description:
       "Keep more money in your pocket thanks to awesome phone deals on Boostmobile, Located inside Santiago Hand Wash building.",
   },
@@ -100,13 +100,13 @@ const starndardService = [
     image: "01",
     title: "Food Mart",
     description:
-      "Inside the food mart we have Check Cashing, Money Gram and Auto Registration",
+      "Stop in for everything you need on the go. Cold drinks, snacks, and daily essentials all in one convenient location.",
   },
   {
     image: "02",
-    title: "Wireless",
+    title: "Check Cashing & Auto Registration",
     description:
-      "Santiago Wireless is your one-stop convenience wireless location allowing you to find your next cellular phone eaiser.",
+      "Skip the DMV lines. We cash checks and handle your vehicle registration and renewals right instore, so you can stay road legal without the wait.",
   },
   {
     image: "03",
@@ -209,7 +209,7 @@ class CorporateBusiness extends Component {
         {/* End Slider Area   */}
 
         {/* Start Service Area */}
-        <div className="service-area ptb--30 bg_color--1">
+        {/* <div className="service-area ptb--30 bg_color--1">
           <div className="container">
             <div className="row service-one-wrapper">
               {ServiceListOne.map((val, i) => (
@@ -230,7 +230,7 @@ class CorporateBusiness extends Component {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Service Area */}
 
         {/* Start Featured Service Area  */}
@@ -242,7 +242,7 @@ class CorporateBusiness extends Component {
                 <div className="section-title">
                   <h2 className="title">Services</h2>
                   <p>
-                    We do it all! From Hand Wash, Check Cashing, Wireless Store
+                    We do it all! From Hand Wash, Check Cashing,
                     and Auto Registration all in one location.
                   </p>
                   <div className="service-btn">

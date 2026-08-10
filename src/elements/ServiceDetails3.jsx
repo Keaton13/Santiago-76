@@ -39,7 +39,7 @@ class ServiceDetails3 extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Santiago Go Wireless</h2>
+                  <h2 className="title theme-gradient">Registration Services</h2>
                   <p>One Stop Convenience Wireless</p>
                 </div>
               </div>

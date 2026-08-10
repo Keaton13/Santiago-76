@@ -19,6 +19,7 @@ import {
 } from "react-icons/fi";
 import CounterOne from "../elements/counters/CounterOne";
 import BrandOne from "../elements/Brand";
+import BrandTwo from "../elements/BrandTwo";
 
 const SlideList = [
   {
@@ -512,7 +513,7 @@ class CorporateBusiness extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <BrandOne branstyle="branstyle--2" />
+                <BrandTwo branstyle="branstyle--2" />
               </div>
             </div>
           </div>

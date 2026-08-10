@@ -8,12 +8,12 @@ class BrandTwo extends Component {
           <li>
             <img src="/assets/images/brand/76-logo3.png" alt="Logo Images" />
           </li>
-          <li>
+          {/* <li>
             <img
               src="/assets/images/brand/boost-mobile_logo.webp"
               alt="Logo Images"
             />
-          </li>
+          </li> */}
           <li>
             <img src="/assets/images/brand/CALottery.webp" alt="Logo Images" />
           </li>

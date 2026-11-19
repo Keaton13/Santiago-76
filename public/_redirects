@@ -1,0 +1,4 @@
+# Single-page app: send every address to index.html and let the site show the
+# right page. Real files (images, scripts, service-worker.js) are still served
+# as-is, because Netlify only applies this when no file exists at that path.
+/*    /index.html    200

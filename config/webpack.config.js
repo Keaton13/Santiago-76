@@ -564,9 +564,11 @@ module.exports = function(webpackEnv) {
       // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
       // You can remove this if you don't use Moment.js:
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-      // Generate a service worker script that will precache, and keep up to date,
-      // the HTML & assets that are part of the Webpack build.
-      isEnvProduction &&
+      // Offline-cache service worker turned OFF: it kept visitors on an old copy
+      // of the site after each deploy. public/service-worker.js now removes the
+      // old one from visitors' devices. Change `false` back to `isEnvProduction`
+      // only if you want offline support again.
+      false &&
         new WorkboxWebpackPlugin.GenerateSW({
           clientsClaim: true,
           exclude: [/\.map$/, /asset-manifest\.json$/],

@@ -1,27 +1,24 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
 class ServiceDetails3 extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-  }
-  openModal() {
-    this.setState({ isOpen: true });
-  }
   render() {
+    const CheckCashingHours = [
+      { day: "Monday – Friday", hours: "10am – 7pm" },
+      { day: "Saturday", hours: "10am – 5pm" },
+      { day: "Sunday", hours: "Closed" },
+    ];
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet
+          pageTitle="Check Cashing & Auto Registration | Santiago 76"
+          description="Payroll and tax refund check cashing, MoneyGram, money orders, and auto registration renewals, transfers, duplicates and custom plates inside Santiago Food Mart in Santa Ana."
+        />
         {/* End Pagehelmet  */}
 
         <Header
@@ -39,8 +36,10 @@ class ServiceDetails3 extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Registration Services</h2>
-                  <p>One Stop Convenience Wireless</p>
+                  <h2 className="title theme-gradient">
+                    Check Cashing & Registration Services
+                  </h2>
+                  <p>Inside the Food Mart</p>
                 </div>
               </div>
             </div>
@@ -60,45 +59,32 @@ class ServiceDetails3 extends Component {
                       <div className="col-lg-6 col-12">
                         <div className="thumb">
                           <img
-                            className="w-100"
-                            src="/assets/images/featured/corporate-02.jpg"
-                            alt="Service Images"
+                            className="w-100 site-rounded"
+                            src="/assets/images/web/corporate-02-1200.webp"
+                            alt="Check cashing counter inside Santiago Food Mart"
                           />
                         </div>
                       </div>
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
                           <p>
-                            Santiago Wireless is your one-stop convenience
-                            wireless location allowing you to find your next
-                            cellular phone easier. We are a Premium Boost Mobile
-                            Dealer and our wireless team, who is led by Luis
-                            Aguilar can help you choose the perfect rate plan
-                            and phone for your family, and or your employees.
+                            Located within the Food Mart is our Check Cashing &
+                            Auto Registration Service Center which offers
+                            payroll & tax refund check cashing along with auto
+                            registration and renewals. Now you can register your
+                            vehicle, grab a money order and send/receive
+                            Moneygrams all from one convenient location while
+                            you shop!
                           </p>
-                          <h4 className="title">Cell Phone Store Hours</h4>
-                          <ul className="liststyle">
-                            <li>
-                              <strong>Monday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Tuesday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Wednesday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Thursday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Friday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Saturday:</strong> 10am - 5pm
-                            </li>
-                            <li>
-                              <strong>Sunday:</strong> 10am - 2pm
-                            </li>
+                          <br/>
+                    <h3>Check Cashing / Auto Registration Hours</h3>
+                          <ul className="cw-hours mt--20">
+                            {CheckCashingHours.map((h) => (
+                              <li key={h.day}>
+                                <span>{h.day}</span>
+                                <strong>{h.hours}</strong>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -109,39 +95,25 @@ class ServiceDetails3 extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
-                        <h4 className="title">Boost Mobile iPhones available.</h4>
-                        <p>
-                            We have an unmatched variety of accessories all in
-                            one friendly location from Bluetooth® devices,
-                            chargers, cords and affordable rate plans including
-                            international re-charge. We are located inside the
-                            Santiago Hand Wash building in an easy-to-find
-                            destination for all of your wireless needs 7 days a
-                            week. Santiago Wireless is committed to providing a
-                            shopping experience that exceeds our customer’s
-                            expectations.
+                          <h2 className="title">Registration Services</h2>
+                          <p>
+                            Skip the long lines and let us handle it for you. We
+                            offer registration renewals, title transfers,
+                            duplicate registrations and titles, and custom
+                            license plates all done quickly and hassle free.
+                            Whether you're renewing your tags or personalizing
+                            your ride with a custom plate, our team makes it
+                            easy to get in, get done, and get back on the road.
                           </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
-                        <div className="thumb position-relative">
+                        <div className="thumb">
                           <img
-                            className="w-100"
-                            src="/assets/images/service/service-3.png"
-                            alt="Service Images"
+                            className="w-100 site-rounded"
+                            src="/assets/images/web/service-4-1200.webp"
+                            alt="Auto registration price sign: renewal $45, transfers $55, duplicates $55, custom plates $50"
                           />
-                          <ModalVideo
-                            channel="youtube"
-                            isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
-                            onClose={() => this.setState({ isOpen: false })}
-                          />
-                          {/* <button
-                            className="video-popup"
-                            onClick={this.openModal}
-                          >
-                            <span className="play-icon"></span>
-                          </button> */}
                         </div>
                       </div>
                     </div>

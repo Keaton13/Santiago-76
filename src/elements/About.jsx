@@ -6,7 +6,6 @@ import Testimonial from "../elements/Testimonial";
 import BrandTwo from "../elements/BrandTwo";
 import Slider from "react-slick";
 import { slideSlick2 } from "../page-demo/script";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
@@ -43,7 +42,10 @@ class About extends Component {
         "Santiago Food Mart and Auto Wash first opened for business on May 24th 1996 originally branded as a Shell Station along with a full service car wash.  The property & business is family owned and operated with most of the property acquired in 1899.  Where the Convenience Store and fuel islands now reside was a large Victorian home on the corner of Santiago and 17th St.  One of the current owners was raised in this house and played as a young girl on the property watching the 5 freeway being built and modernized in the early 50’s.";
     return (
       <React.Fragment>
-        <PageHelmet pageTitle="About" />
+        <PageHelmet
+          pageTitle="Our History | Santiago 76"
+          description="The history of Santiago 76 in Santa Ana, a family owned food mart and hand car wash that opened on May 24th 1996 on the corner of Santiago and 17th St."
+        />
 
         <Header
           headertransparent="header--transparent"
@@ -63,8 +65,8 @@ class About extends Component {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="/assets/images/about/about-3.jpg"
-                      alt="About Images"
+                      src="/assets/images/web/about-3-1200.webp"
+                      alt="Santiago Food Mart's grand opening as a Shell station"
                     />
                   </div>
                 </div>
@@ -82,7 +84,7 @@ class About extends Component {
                         1990’s began older service stations were being razed and
                         newer stations were being built with new modern
                         underground gas tanks and updated convenience stores.
-                        This lead the family to re-develop the corner to modern
+                        This led the family to re-develop the corner to modern
                         standards. Construction took place as the 5 freeway was
                         being modernized at the 17th St Exit.
                       </p>
@@ -109,7 +111,7 @@ class About extends Component {
 
         {/* Start New Store Image Slider */}
         <div className="slider-wrapper">
-          <div className="slider-activation w-75 m-auto">
+          <div className="slider-activation site-photo-slider container">
             <Slider className="rn-slick-dot dot-light" {...slideSlick2}>
               {SlideList2.map((value, index) => (
                 <div
@@ -187,8 +189,8 @@ class About extends Component {
             <div className="thumbnail contain-Content">
               <div className="image">
                 <img
-                  src="/assets/images/featured/corporate-6.jpg"
-                  alt="Finding Images"
+                  src="/assets/images/web/corporate-6-1920.webp"
+                  alt="Aerial view of Santiago 76 at sunset"
                 />
               </div>
             </div>

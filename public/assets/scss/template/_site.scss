@@ -1,0 +1,262 @@
+/*---------------------------------------
+    Santiago 76 site-wide styles
+-----------------------------------------*/
+
+/* Logo */
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    img {
+        width: 44px;
+        height: 44px;
+    }
+    span {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        color: #ffffff;
+        transition: color 0.3s;
+    }
+    &:hover span {
+        color: $theme-color;
+    }
+    @media #{$sm-layout} {
+        img {
+            width: 36px;
+            height: 36px;
+        }
+        span {
+            font-size: 19px;
+        }
+    }
+}
+
+// Home page header sits on white, so the wordmark is dark there
+.header-area.color-black .site-logo span {
+    color: $heading-color;
+}
+.header-area.color-black .site-logo:hover span {
+    color: $theme-color;
+}
+
+// Logo on the left, menu on the right (inner-page header)
+.header-area.header--transparent .header-wrapper {
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Home hero: keep the slide text clear of the arrows */
+.site-hero {
+    .slide .inner {
+        @media #{$laptop-device} {
+            padding: 0 90px;
+        }
+        @media only screen and (min-width: 1601px) {
+            padding: 0 40px;
+        }
+    }
+}
+
+/* Rounded photos */
+.site-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.site-tile {
+    display: block;
+    width: 100%;
+    aspect-ratio: #{4} / #{3};
+    object-fit: cover;
+}
+
+/* Photo slider (home "new store" section and history page) */
+.site-photo-slider {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    .slick-slide img {
+        display: block;
+        width: 100%;
+        aspect-ratio: #{4} / #{3};
+        object-fit: cover;
+    }
+    .slick-dots {
+        bottom: 20px;
+        @media #{$sm-layout} {
+            bottom: 15px;
+        }
+    }
+    button.slick-arrow {
+        width: 52px;
+        height: 52px;
+        &.slick-prev {
+            left: 20px;
+            &:hover {
+                left: 15px;
+            }
+        }
+        &.slick-next {
+            right: 20px;
+            &:hover {
+                right: 15px;
+            }
+        }
+    }
+    // history page slides are background images
+    .slide.slide-style-2.slider-box-content {
+        height: 560px;
+        padding: 0;
+        background-position: center;
+        @media #{$md-layout} {
+            height: 420px;
+        }
+        @media #{$sm-layout} {
+            height: 260px;
+        }
+    }
+}
+
+/* Clickable service cards on the home page */
+.site-service-card {
+    display: block;
+    color: inherit;
+    .thumbnai img {
+        width: 100%;
+        aspect-ratio: #{4} / #{3};
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .content h3 {
+        transition: color 0.3s;
+    }
+    &:hover {
+        color: inherit;
+        .thumbnai img {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+        .content h3 {
+            color: $theme-color;
+        }
+    }
+}
+
+/* Checklist */
+.site-checklist li {
+    font-size: 18px;
+    margin: 10px 0;
+    svg {
+        color: $theme-color;
+        margin-right: 8px;
+    }
+}
+
+/* Hours cards on the home page */
+.site-hours-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px 25px 20px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    h4 {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .cw-hours {
+        margin-bottom: 0;
+        li {
+            padding: 10px 0;
+            span,
+            strong {
+                font-size: 15px;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .cw-note {
+        margin-top: 5px;
+    }
+}
+
+/* Contact page */
+.site-address-card {
+    height: 100%;
+    text-align: center;
+    .inner p {
+        margin-bottom: 8px;
+    }
+}
+
+.site-map iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+    @media #{$sm-layout} {
+        height: 320px;
+    }
+}
+
+/* History page quote: shown without the template's tab animation */
+.rn-testimonial-content.site-quote {
+    opacity: 1;
+    transform: none;
+    filter: none;
+}
+
+/* Keep the logo mark square: the template header forces logo images to fixed widths */
+.header-area .header-wrapper .logo a.site-logo img,
+.header-area.logoresize .logo a.site-logo img {
+    width: 44px !important;
+    height: 44px !important;
+    max-height: none;
+    @media #{$sm-layout} {
+        width: 34px !important;
+        height: 34px !important;
+    }
+}
+
+/* Background photos: smaller WebP copies (originals stay in /assets/images/bg).
+   Phones get a 900px version. */
+@for $i from 17 through 33 {
+    .bg_image--#{$i} {
+        background-image: url(/assets/images/web/bg-image-#{$i}.webp) !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    @for $i from 17 through 33 {
+        .bg_image--#{$i} {
+            background-image: url(/assets/images/web/bg-image-#{$i}-900.webp) !important;
+        }
+    }
+}
+
+/* Small note next to an hours card title, e.g. "(Weather permitting)" */
+.site-hours-qualifier {
+    font-size: 14px;
+    font-weight: 400;
+    color: #717173;
+    white-space: nowrap;
+}
+
+/* Always keep a little space between the day and the time in hours lists */
+.cw-hours li {
+    column-gap: 12px;
+}
+@media #{$sm-layout} {
+    .site-hours-card .cw-hours li {
+        span,
+        strong {
+            font-size: 14px;
+        }
+    }
+}

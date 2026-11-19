@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FiX, FiMenu } from "react-icons/fi";
+import SiteLogo from "../common/SiteLogo";
 
 class Header extends Component {
   constructor(props) {
@@ -8,9 +9,6 @@ class Header extends Component {
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-    window.addEventListener("load", function () {
-      console.log("All assets are loaded");
-    });
   }
 
   menuTrigger() {
@@ -33,33 +31,8 @@ class Header extends Component {
         };
       }
     }
-    const { logo, color = "default-color" } = this.props;
-    let logoUrl;
-    if (logo === "light") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
-      );
-    } else if (logo === "dark") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
-      );
-    } else if (logo === "symbol-dark") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-dark.png"
-          alt="Digital Agency"
-        />
-      );
-    } else if (logo === "symbol-light") {
-      logoUrl = (
-        <img
-          src="/assets/images/logo/logo-symbol-light.png"
-          alt="Digital Agency"
-        />
-      );
-    } else {
-      logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
-    }
+    const { color = "default-color" } = this.props;
+
 
     return (
       <header
@@ -68,13 +41,13 @@ class Header extends Component {
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">
-              {/* <a href="/">{logoUrl}</a> */}
+              <SiteLogo />
             </div>
           </div>
           <div className="header-right">
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
-                <li className="has-droupdown">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li className="has-droupdown">
@@ -86,9 +59,9 @@ class Header extends Component {
                     <li>
                       <Link to="/service-details2">Hand Wash</Link>
                     </li>
-                    {/* <li>
-                      <Link to="/service-details3">Wireless</Link>
-                    </li> */}
+                    <li>
+                      <Link to="/service-details3">Check Cashing & Registration</Link>
+                    </li>
                   </ul>
                 </li>
                 <li>

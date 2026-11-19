@@ -260,3 +260,48 @@
         }
     }
 }
+
+/* Phones: photo rows become a swipeable row (same as the car wash videos) */
+@media #{$sm-layout} {
+    .site-swipe-row {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 8px;
+        padding-right: 8px;
+        scroll-padding: 0 8px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        > [class*="col-"] {
+            flex: 0 0 80%;
+            max-width: 80%;
+            padding: 0 7px;
+            margin-bottom: 0;
+            scroll-snap-align: center;
+        }
+    }
+}
+
+/* Phones: use the full screen width. The template fixed the page at 320px or
+   450px wide on phones, which left ~35px of empty margin on each side. */
+@media #{$large-mobile} {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Never let anything poke past the right edge of the screen (the template's
+   hidden mobile menu and footer did on some pages, which iPhones let you pan to). */
+#root {
+    overflow-x: hidden;
+}
+@supports (overflow-x: clip) {
+    #root {
+        overflow-x: clip;
+    }
+}

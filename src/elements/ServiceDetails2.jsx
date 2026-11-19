@@ -354,7 +354,7 @@ class ServiceDetails2 extends Component {
                 </div>
               </div>
               <div className="col-lg-7 order-1 order-lg-2">
-                <div className="row row--10">
+                <div className="row row--10 site-swipe-row">
                   <div className="col-6">
                     <img
                       className="w-100 cw-rounded"
@@ -506,24 +506,6 @@ class ServiceDetails2 extends Component {
                     loading="lazy"
                     allowFullScreen
                   />
-                </div>
-                <div className="row row--10 mt--20">
-                  <div className="col-6">
-                    <img
-                      className="w-100 cw-rounded"
-                      src={`${IMG}/find-us-pump.webp`}
-                      alt="Santiago Hand Wash sign at the 76 gas pumps"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="col-6">
-                    <img
-                      className="w-100 cw-rounded"
-                      src={`${IMG}/find-us-entrance.webp`}
-                      alt="Entrance to the 100% Hand Car Wash bay"
-                      loading="lazy"
-                    />
-                  </div>
                 </div>
               </div>
             </div>

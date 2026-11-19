@@ -97,9 +97,9 @@ a.rn-button-style--2.cw-btn-light {
         /* run edge to edge so the next clip peeks in from the screen edge */
         margin-left: calc(50% - 50vw);
         margin-right: calc(50% - 50vw);
-        padding-left: 22px;
-        padding-right: 22px;
-        scroll-padding: 0 22px;
+        padding-left: 8px;
+        padding-right: 8px;
+        scroll-padding: 0 8px;
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -286,5 +286,14 @@ a.rn-button-style--2.cw-btn-light {
         width: 100%;
         height: 100%;
         border: 0;
+    }
+}
+
+/* Desktop: map fills the full height of the hours column next to it */
+@media only screen and (min-width: 992px) {
+    .cw-map {
+        padding-top: 0;
+        height: 100%;
+        min-height: 420px;
     }
 }

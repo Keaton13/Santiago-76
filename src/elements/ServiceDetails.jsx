@@ -82,7 +82,7 @@ class ServiceDetails extends Component {
         {/* Store photos */}
         <div className="pb--120 bg_color--1">
           <div className="container">
-            <div className="row row--10">
+            <div className="row row--10 site-swipe-row">
               {StorePhotos.map((photo) => (
                 <div className="col-lg-3 col-6 mb--20" key={photo.src}>
                   <img

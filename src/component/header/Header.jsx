@@ -86,9 +86,9 @@ class Header extends Component {
                     <li>
                       <Link to="/service-details2">Hand Wash</Link>
                     </li>
-                    {/* <li>
-                      <Link to="/service-details3">Wireless</Link>
-                    </li> */}
+                    <li>
+                      <Link to="/service-details3">Check Cashing & Registration</Link>
+                    </li>
                   </ul>
                 </li>
                 <li>

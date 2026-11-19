@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
-import { FiChevronUp } from "react-icons/fi";
+import { FiCheck, FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
@@ -18,6 +18,15 @@ class ServiceDetails3 extends Component {
     this.setState({ isOpen: true });
   }
   render() {
+    var namesItemOne = [
+      "Monday: 10am - 7pm",
+      "Tuesday: 10am - 7pm",
+      "Wednesday: 10am - 7pm",
+      "Thursday: 10am - 7pm",
+      "Friday: 10am - 7pm",
+      "Saturday: 10am - 5pm",
+      "Sunday: Closed",
+    ];
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
@@ -39,8 +48,10 @@ class ServiceDetails3 extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Registration Services</h2>
-                  <p>One Stop Convenience Wireless</p>
+                  <h2 className="title theme-gradient">
+                    Check Cashing & Registration Services
+                  </h2>
+                  <p>Inside the Food Mart</p>
                 </div>
               </div>
             </div>
@@ -69,35 +80,46 @@ class ServiceDetails3 extends Component {
                       <div className="col-lg-6 col-12">
                         <div className="details mt_md--30 mt_sm--30">
                           <p>
-                            Santiago Wireless is your one-stop convenience
-                            wireless location allowing you to find your next
-                            cellular phone easier. We are a Premium Boost Mobile
-                            Dealer and our wireless team, who is led by Luis
-                            Aguilar can help you choose the perfect rate plan
-                            and phone for your family, and or your employees.
+                            Located within the Food Mart is our Check Cashing &
+                            Auto Registration Service Center which offers
+                            payroll & tax refund check cashing along with auto
+                            registration and renewals. Now you can register your
+                            vehicle, grab a money order and send/receive
+                            Moneygrams all from one convenient location while
+                            you shop!
                           </p>
-                          <h4 className="title">Cell Phone Store Hours</h4>
-                          <ul className="liststyle">
+                          <br/>
+                    <h3>Check Cashing / Auto Registration Hours</h3>
+                          {/* <ul className="list-style--1">
+                            {namesItemOne.map((name, index) => {
+                              return (
+                                <li key={index}>
+                                  <h5><FiCheck /> {name}</h5>
+                                </li>
+                              );
+                            })}
+                          </ul> */}
+                          <ul className="list-style--1">
                             <li>
-                              <strong>Monday:</strong> 10am - 5pm
+                              <h5><FiCheck /> <strong>Monday:</strong> 10am - 7pm</h5>
                             </li>
                             <li>
-                              <strong>Tuesday:</strong> 10am - 5pm
+                             <h5><FiCheck /> <strong>Tuesday:</strong> 10am - 7pm</h5>
                             </li>
                             <li>
-                              <strong>Wednesday:</strong> 10am - 5pm
+                              <h5><FiCheck /><strong>Wednesday:</strong> 10am - 7pm</h5>
                             </li>
                             <li>
-                              <strong>Thursday:</strong> 10am - 5pm
+                              <h5><FiCheck /><strong>Thursday:</strong> 10am - 7pm</h5>
                             </li>
                             <li>
-                              <strong>Friday:</strong> 10am - 5pm
+                              <h5><FiCheck /><strong>Friday:</strong> 10am - 7pm</h5>
                             </li>
                             <li>
-                              <strong>Saturday:</strong> 10am - 5pm
+                              <h5><FiCheck /><strong>Saturday:</strong> 10am - 5pm</h5>
                             </li>
                             <li>
-                              <strong>Sunday:</strong> 10am - 2pm
+                              <h5><FiCheck /><strong>Sunday:</strong> Closed</h5>
                             </li>
                           </ul>
                         </div>
@@ -109,17 +131,15 @@ class ServiceDetails3 extends Component {
                     <div className="row sercice-details-content align-items-center">
                       <div className="col-lg-6 col-12 order-2 order-lg-1">
                         <div className="details mt_md--30 mt_sm--30">
-                        <h4 className="title">Boost Mobile iPhones available.</h4>
-                        <p>
-                            We have an unmatched variety of accessories all in
-                            one friendly location from Bluetooth® devices,
-                            chargers, cords and affordable rate plans including
-                            international re-charge. We are located inside the
-                            Santiago Hand Wash building in an easy-to-find
-                            destination for all of your wireless needs 7 days a
-                            week. Santiago Wireless is committed to providing a
-                            shopping experience that exceeds our customer’s
-                            expectations.
+                          <h2 className="title">Registration Services</h2>
+                          <p>
+                            Skip the long lines and let us handle it for you. We
+                            offer registration renewals, title transfers,
+                            duplicate registrations and titles, and custom
+                            license plates all done quickly and hassle free.
+                            Whether you're renewing your tags or personalizing
+                            your ride with a custom plate, our team makes it
+                            easy to get in, get done, and get back on the road.
                           </p>
                         </div>
                       </div>
@@ -127,7 +147,7 @@ class ServiceDetails3 extends Component {
                         <div className="thumb position-relative">
                           <img
                             className="w-100"
-                            src="/assets/images/service/service-3.png"
+                            src="/assets/images/service/service-4.JPG"
                             alt="Service Images"
                           />
                           <ModalVideo

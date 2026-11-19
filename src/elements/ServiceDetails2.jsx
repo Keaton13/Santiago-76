@@ -1,111 +1,224 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from 'react-modal-video';
-import ScrollToTop from 'react-scroll-up';
+import ModalVideo from "react-modal-video";
+import ScrollToTop from "react-scroll-up";
 import { FiChevronUp, FiCheck } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
+class ServiceDetails2 extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+  }
+  openModal() {
+    this.setState({ isOpen: true });
+  }
+  render() {
+    return (
+      <React.Fragment>
+        {/* Start Pagehelmet  */}
+        <PageHelmet pageTitle="Service Details" />
+        {/* End Pagehelmet  */}
 
-class ServiceDetails2 extends Component{
-    constructor () {
-        super()
-        this.state = {
-          isOpen: false
-        }
-        this.openModal = this.openModal.bind(this)
-    }
-    openModal () {
-        this.setState({isOpen: true})
-    }
-    render(){
-        return(
-            <React.Fragment>
-                
-                {/* Start Pagehelmet  */}
-                <PageHelmet pageTitle='Service Details' />
-                {/* End Pagehelmet  */}
+        <Header
+          headertransparent="header--transparent"
+          colorblack="color--black"
+          logoname="logo.png"
+        />
 
-                <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
-
-                {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="5">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Santiago Hand Wash & Detailing</h2>
-                                    <p>We Focus on the Details!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        {/* Start Breadcrump Area */}
+        <div
+          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"
+          data-black-overlay="5"
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="rn-page-title text-center pt--100">
+                  <h2 className="title theme-gradient">
+                    Santiago Hand Wash & Detailing
+                  </h2>
+                  <p>We Focus on the Details!</p>
                 </div>
-                {/* End Breadcrump Area */}
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Breadcrump Area */}
 
-                {/* Start Page Wrapper */}
-                <div className="rn-service-details ptb--120 bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="service-details-inner">
-                                    <div className="inner">
-                                        {/* Start Single Area */}
-                                        <div className="row sercice-details-content pb--80 align-items-center">
-                                            <div className="col-lg-6 col-12">
-                                                <div className="thumb">
-                                                    <img className="w-100" src="/assets/images/featured/corporate-6.jpg" alt="Service Images"/>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-12">
-                                                <div className="details mt_md--30 mt_sm--30">
-                                                    <p>We welcome you to Santiago Hand Wash. Since opening in 1996, we have grown to provide our customers with the best quality hand car wash experience. We take pride in our quality of services and on the importance of our customers expectations. In addition to all of our exterior and full service hand washes, we are your one-stop detail center. All of our customers are provided with the best quality and value in name brand wash services using companies such as Meguiar’s,™ Blue Coral ,™ Magic Clay ,™ Lexol ™ and ArmorAll .™</p>
-                                                    <p>In addition, we utilize micro fiber towels, which give our detail services it’s extra streak-free shine. No longer do you need to fear other car wash lingo and overpriced packages. At Santiago Hand Wash we simplify and take away the unknown to fully satisfy you. Come find out what Santiago Hand Wash can provide you, and your vehicles. </p>
-                                                    <h4 className="title mb-2">Car Wash Hours <h5 className="mb-0 mt-1">(Weather Permitting)</h5></h4>
-                                                    <ul className="list-style--1">
-                                                        <li> 
-                                                            <h5 className="mb-0 mt-3">Winter Hours</h5>
-                                                            <FiCheck />8am - 5pm (Last Car at 4:30pm)
-                                                        </li>
-                                                        <li> 
-                                                            <h5 className="mb-0">Summer Hours</h5>
-                                                            <FiCheck />8am-6pm (Last Car at 5:30pm)
-                                                        </li>
-                                                        {/* <li>7 Days a Week</li>
+        {/* Start Page Wrapper */}
+        <div className="rn-service-details ptb--120 bg_color--1">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="service-details-inner">
+                  <div className="inner">
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-6 col-12">
+                        <div className="thumb">
+                          <img
+                            className="w-100"
+                            src="/assets/images/featured/corporate-7.jpg"
+                            alt="Service Images"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-12">
+                        <div className="details mt_md--30 mt_sm--30">
+                          <p>
+                            We welcome you to Santiago Hand Wash. Since opening
+                            in 1996, we have grown to provide our customers with
+                            the best quality hand car wash experience. We take
+                            pride in our quality of services and on the
+                            importance of our customers expectations. In
+                            addition to all of our exterior and full service
+                            hand washes, we are your one-stop detail center. All
+                            of our customers are provided with the best quality
+                            and value in name brand wash services using
+                            companies such as Meguiar’s,™ Blue Coral ,™ Magic
+                            Clay ,™ Lexol ™ and ArmorAll .™
+                          </p>
+                          <p>
+                            In addition, we utilize micro fiber towels, which
+                            give our detail services it’s extra streak-free
+                            shine. No longer do you need to fear other car wash
+                            lingo and overpriced packages. At Santiago Hand Wash
+                            we simplify and take away the unknown to fully
+                            satisfy you. Come find out what Santiago Hand Wash
+                            can provide you, and your vehicles.{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Single Area */}
+
+                    {/* Start Single Area */}
+                    <div className="row sercice-details-content pb--80 mt-16 align-items-center">
+                      <div className="col-lg-6 col-12 order-2 order-lg-1">
+                        <div className="details mt_md--30 mt_sm--30">
+                          <h4 className="title mb-2">New Waiting Area</h4>
+                          <p>
+                            Waiting for your car should be the easy part of your
+                            day. That's why we completely remodeled our waiting
+                            area from the ground up. Relax in comfortable
+                            seating with plenty of tables to spread out, catch
+                            up on work, or grab a bite from the Food Mart. New
+                            flat-screen TVs keep you entertained while our team
+                            hand washes your vehicle with the care it deserves.
+                            We also fully renovated our restrooms clean,
+                            bright, and stocked, because the details matter.
+                            Whether you're in and out in fifteen minutes or
+                            settling in for the full detail, we built this space
+                            so you'd actually enjoy the wait.
+                          </p>
+                          {/* <h4 className="title">Our Working Process</h4>
+                                                    <ul className="liststyle">
+                                                        <li>Yet this above sewed flirted opened ouch</li>
+                                                        <li>Goldfinch realistic sporadic ingenuous</li>
+                                                        <li>Abominable this abidin far successfully then like piquan</li>
+                                                    </ul> */}
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-12 order-1 order-lg-2">
+                        <div className="thumb position-relative">
+                          <img
+                            className="w-100"
+                            src="/assets/images/service/service-5.jpg"
+                            alt="Service Images"
+                          />
+                          <ModalVideo
+                            channel="youtube"
+                            isOpen={this.state.isOpen}
+                            videoId="ZOoVOfieAF8"
+                            onClose={() => this.setState({ isOpen: false })}
+                          />
+                          {/* <button className="video-popup" onClick={this.openModal}><span className="play-icon"></span></button> */}
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Single Area */}
+                    <div className="row sercice-details-content pb--80 align-items-center">
+                      <div className="col-lg-6 col-12">
+                        <div className="thumb">
+                          <img
+                            className="w-100"
+                            src="/assets/images/featured/corporate-8.jpg"
+                            alt="Service Images"
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-12">
+                        <div className="details mt_md--30 mt_sm--30">
+                          {/* <p>
+                            We welcome you to Santiago Hand Wash. Since opening
+                            in 1996, we have grown to provide our customers with
+                            the best quality hand car wash experience. We take
+                            pride in our quality of services and on the
+                            importance of our customers expectations. In
+                            addition to all of our exterior and full service
+                            hand washes, we are your one-stop detail center. All
+                            of our customers are provided with the best quality
+                            and value in name brand wash services using
+                            companies such as Meguiar’s,™ Blue Coral ,™ Magic
+                            Clay ,™ Lexol ™ and ArmorAll .™
+                          </p>
+                          <p>
+                            In addition, we utilize micro fiber towels, which
+                            give our detail services it’s extra streak-free
+                            shine. No longer do you need to fear other car wash
+                            lingo and overpriced packages. At Santiago Hand Wash
+                            we simplify and take away the unknown to fully
+                            satisfy you. Come find out what Santiago Hand Wash
+                            can provide you, and your vehicles.{" "}
+                          </p> */}
+                          <h4 className="title mb-2">
+                            Car Wash Hours{" "}
+                            <h5 className="mb-0 mt-1">(Weather Permitting)</h5>
+                          </h4>
+                          <ul className="list-style--1">
+                            <li>
+                              <h5 className="mb-0 mt-3">Winter Hours</h5>
+                              <FiCheck />
+                              8am - 5pm (Last Car at 4:30pm)
+                            </li>
+                            <li>
+                              <h5 className="mb-0">Summer Hours</h5>
+                              <FiCheck />
+                              8am-6pm (Last Car at 5:30pm)
+                            </li>
+                            {/* <li>7 Days a Week</li>
                                                         <li>Weather Permited*</li> */}
-                                                        {/* <li>Abominable this abidin far successfully then like piquan</li>
+                            {/* <li>Abominable this abidin far successfully then like piquan</li>
                                                         <li>Risus commodo viverra</li>
                                                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li> */}
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        {/* End Single Area */}
-
-                                        {/* Start Single Area */}
-
-                                        {/* End Single Area */}
-
-                                    </div>
-                                </div>
-                            </div>
+                          </ul>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                {/* End Page Wrapper */}
-                
-                {/* Start Back To Top */}
-                <div className="backto-top">
-                    <ScrollToTop showUnder={160}>
-                        <FiChevronUp />
-                    </ScrollToTop>
-                </div>
-                {/* End Back To Top */}
-                
-                <Footer />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Page Wrapper */}
 
-            </React.Fragment>
-        )
-    }
+        {/* Start Back To Top */}
+        <div className="backto-top">
+          <ScrollToTop showUnder={160}>
+            <FiChevronUp />
+          </ScrollToTop>
+        </div>
+        {/* End Back To Top */}
+
+        <Footer />
+      </React.Fragment>
+    );
+  }
 }
 export default ServiceDetails2;

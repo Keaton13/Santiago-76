@@ -86,7 +86,7 @@ const ServiceListOne = [
     icon: <FiLayers />,
     title: "Car Wash",
     description:
-      "Keep more money in your pocket thanks to awesome phone deals on Boostmobile, Located inside Santiago Hand Wash building.",
+      "100% hand car wash and detailing. Exterior hand wash from $20, full service from $38, and 20¢ off per gallon of gas with any car wash.",
   },
   {
     icon: <FiUsers />,
@@ -100,18 +100,21 @@ const starndardService = [
   {
     image: "01",
     title: "Food Mart",
+    link: "/service-details",
     description:
       "Stop in for everything you need on the go. Cold drinks, snacks, and daily essentials all in one convenient location.",
   },
   {
     image: "02",
     title: "Check Cashing & Auto Registration",
+    link: "/service-details3",
     description:
       "Skip the DMV lines. We cash checks and handle your vehicle registration and renewals right instore, so you can stay road legal without the wait.",
   },
   {
     image: "03",
     title: "Hand Wash",
+    link: "/service-details2",
     description:
       "We welcome you to Santiago Hand Wash. Since opening in 1996, we have grown to provide our customers with the best quality hand wash experience.",
   },
@@ -269,7 +272,7 @@ class CorporateBusiness extends Component {
                         </div>
                         <div className="content">
                           <h3>
-                            <a href="/service-details">{value.title}</a>
+                            <a href={value.link}>{value.title}</a>
                           </h3>
                           <p>{value.description}</p>
                         </div>

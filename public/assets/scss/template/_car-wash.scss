@@ -1,0 +1,290 @@
+/*---------------------------------------
+    Car Wash Page (ServiceDetails2)
+-----------------------------------------*/
+
+.cw-hero {
+    background-position: center 60%;
+
+    .rn-page-title p {
+        font-size: 20px;
+        @media #{$sm-layout} {
+            font-size: 16px;
+        }
+    }
+}
+
+.cw-hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+a.rn-button-style--2.cw-btn-light {
+    border-color: #ffffff;
+    color: #ffffff;
+    &:hover {
+        background: #ffffff;
+        color: $heading-color;
+    }
+}
+
+.cw-section {
+    .section-title p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.cw-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Gas discount callout */
+.cw-offer {
+    background: $theme-color;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 35px 40px;
+    text-align: center;
+
+    .cw-offer-amount {
+        display: block;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+    p {
+        color: #ffffff;
+        font-size: 20px;
+        margin: 8px 0 15px;
+    }
+    .cw-offer-extra {
+        display: inline-block;
+        font-size: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        padding-top: 12px;
+    }
+}
+
+/* Video strip */
+.cw-reel {
+    .cw-reel-item {
+        margin: 0 0 20px;
+        video {
+            display: block;
+            width: 100%;
+            aspect-ratio: #{9} / #{16};
+            object-fit: cover;
+            border-radius: 10px;
+            background: #1f1f25;
+        }
+        figcaption {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: $body-color;
+        }
+    }
+}
+
+/* Phones: swipe through the clips instead of a 2x2 grid.
+   To go back to the grid, delete this block. */
+@media #{$sm-layout} {
+    .cw-reel {
+        /* run edge to edge so the next clip peeks in from the screen edge */
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        padding-left: 22px;
+        padding-right: 22px;
+        scroll-padding: 0 22px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 5px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        > [class*="col-"] {
+            flex: 0 0 80%;
+            max-width: 80%;
+            padding: 0 7px;
+            scroll-snap-align: center;
+        }
+    }
+}
+
+/* Prices */
+.cw-price-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 35px 30px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 20px 0 10px;
+    }
+    .list-style--1 li {
+        font-size: 16px;
+        margin: 6px 0;
+        svg {
+            color: $theme-color;
+            margin-right: 6px;
+        }
+    }
+}
+
+.cw-price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 0;
+        border-bottom: 1px dashed $border-color;
+        margin: 0;
+        span {
+            font-size: 16px;
+        }
+        strong {
+            font-size: 26px;
+            color: $theme-color;
+        }
+    }
+}
+
+.cw-note {
+    font-size: 14px;
+    color: #717173;
+    margin: 15px 0 0;
+}
+
+.cw-addons {
+    .cw-addons-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        h3 {
+            margin-bottom: 10px;
+        }
+        strong {
+            font-size: 26px;
+            color: $theme-color;
+        }
+    }
+    .cw-addons-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+        li {
+            margin: 0;
+            font-size: 16px;
+            svg {
+                color: $theme-color;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+/* Gallery */
+.cw-gallery-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: zoom-in;
+    img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    &:hover img,
+    &:focus img {
+        transform: scale(1.05);
+    }
+}
+
+/* Hours + location */
+.cw-hours {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+    li {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: 15px 0;
+        border-bottom: 1px solid $border-color;
+        margin: 0;
+        span {
+            font-size: 18px;
+            font-weight: 600;
+            color: $heading-color;
+        }
+        strong {
+            font-size: 18px;
+            text-align: right;
+            color: $heading-color;
+        }
+        small {
+            grid-column: 2;
+            font-size: 14px;
+            text-align: right;
+            color: #717173;
+        }
+    }
+}
+
+.cw-address {
+    font-size: 16px;
+    line-height: 28px;
+    svg {
+        color: $theme-color;
+        margin-right: 4px;
+    }
+}
+
+.cw-location-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    svg {
+        margin-right: 6px;
+        vertical-align: -2px;
+    }
+}
+
+.cw-map {
+    position: relative;
+    padding-top: 60%;
+    iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}

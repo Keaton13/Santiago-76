@@ -18,7 +18,7 @@ class Footer extends Component{
                             <div className="col-lg-6">
                                 <div className="footer-left">
                                     <div className="inner">
-                                        <span>Ready To Fill Up?</span>
+                                        <span>{this.props.ctaTagline || "Ready To Fill Up?"}</span>
                                         <h2>Visit Us <br /> Today!</h2>
                                         <a className="rn-button-style--2" href="/contact">
                                             <span>Contact Us</span>
@@ -46,7 +46,7 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>Say Hello!</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="mailto:admin@example.com">Phone: 1-714-541-3883</a></li>
+                                                    <li><a href="tel:+17145413883">Phone: (714) 541-3883</a></li>
                                                 </ul>
 
                                                 {/* <div className="social-share-inner">
@@ -62,7 +62,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
+                                                <p>Copyright © {new Date().getFullYear()} Santiago 76. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>

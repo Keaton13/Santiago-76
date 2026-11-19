@@ -1,12 +1,4 @@
 import React, { Component } from "react";
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
-
-const SocialShare = [
-    {Social: <FaFacebookF /> , link: 'https://www.facebook.com/'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/'},
-    {Social: <FaTwitter /> , link: 'https://twitter.com/'},
-]
 
 class Footer extends Component{
     render(){
@@ -35,6 +27,9 @@ class Footer extends Component{
                                                 <h4>Quick Link</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="/">Home</a></li>
+                                                    <li><a href="/service-details">Food Mart</a></li>
+                                                    <li><a href="/service-details2">Hand Wash</a></li>
+                                                    <li><a href="/service-details3">Check Cashing & Registration</a></li>
                                                     <li><a href="/about">History</a></li>
                                                     <li><a href="/contact">Contact Us</a></li>
                                                 </ul>
@@ -47,15 +42,8 @@ class Footer extends Component{
                                                 <h4>Say Hello!</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="tel:+17145413883">Phone: (714) 541-3883</a></li>
+                                                    <li><a href="https://www.google.com/maps/dir/?api=1&destination=617+E+17th+St+Santa+Ana+CA+92701" target="_blank" rel="noopener noreferrer">617 E 17th St, Santa Ana, CA 92701</a></li>
                                                 </ul>
-
-                                                {/* <div className="social-share-inner">
-                                                    <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
-                                                        {SocialShare.map((val , i) => (
-                                                            <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
-                                                        ))}
-                                                    </ul>
-                                                </div>  */}
                                             </div>
                                         </div>
                                         {/* End Single Widget  */}

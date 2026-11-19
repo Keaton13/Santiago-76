@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FiX, FiMenu } from "react-icons/fi";
+import SiteLogo from "../common/SiteLogo";
 
 class HeaderFive extends Component {
   constructor(props) {
@@ -8,9 +9,6 @@ class HeaderFive extends Component {
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-    window.addEventListener("load", function () {
-      console.log("All assets are loaded");
-    });
   }
   menuTrigger() {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
@@ -31,25 +29,8 @@ class HeaderFive extends Component {
       }
     }
 
-    const { logo, color, headerPosition } = this.props;
-    let logoUrl;
-    if (logo === "light") {
-      logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Trydo" />;
-    } else if (logo === "dark") {
-      logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Trydo" />;
-    } else if (logo === "symbol-dark") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-symbol-dark.png" alt="Trydo" />
-      );
-    } else if (logo === "all-dark") {
-      logoUrl = <img src="/assets/images/logo/logo-all-dark.png" alt="Trydo" />;
-    } else if (logo === "symbol-light") {
-      logoUrl = (
-        <img src="/assets/images/logo/logo-symbol-light.png" alt="Trydo" />
-      );
-    } else {
-      logoUrl = <img src="/assets/images/logo/logo.png" alt="Trydo" />;
-    }
+    const { color, headerPosition } = this.props;
+
 
     return (
       <header
@@ -61,7 +42,7 @@ class HeaderFive extends Component {
               <div className="col-lg-3 col-md-4 col-6">
                 <div className="header-left">
                   <div className="logo">
-                    {/* <a href="/">{logoUrl}</a> */}
+                    <SiteLogo />
                   </div>
                 </div>
               </div>
@@ -69,7 +50,7 @@ class HeaderFive extends Component {
                 <div className="header-right justify-content-end">
                   <nav className="mainmenunav d-lg-block">
                     <ul className="mainmenu">
-                      <li className="has-droupdown">
+                      <li>
                         <Link to="/">Home</Link>
                       </li>
                       <li className="has-droupdown">

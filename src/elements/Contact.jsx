@@ -1,29 +1,23 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import { FiHeadphones, FiMail, FiMapPin } from "react-icons/fi";
-import GoogleMapReact from "google-map-react";
-import ContactTwo from "../elements/contact/ContactTwo";
+import { FiHeadphones, FiMapPin } from "react-icons/fi";
 import BrandTwo from "../elements/BrandTwo";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const ADDRESS = "617 E 17th St, Santa Ana, CA 92701";
+const MAP_QUERY = encodeURIComponent(ADDRESS);
 
 class Contact extends Component {
-  static defaultProps = {
-    center: {
-      lat: 33.76063422414595,
-      lng: -117.86055142114375,
-    },
-    zoom: 15,
-  };
-
   render() {
     return (
       <React.Fragment>
-        <PageHelmet pageTitle="Contact" />
+        <PageHelmet
+          pageTitle="Contact | Santiago 76"
+          description="Call Santiago 76 at (714) 541-3883 or visit us at 617 E 17th St, Santa Ana, CA 92701."
+        />
 
         <Header
           headertransparent="header--transparent"
@@ -41,7 +35,7 @@ class Contact extends Component {
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
                   <h2 className="title theme-gradient">Contact Information</h2>
-                  <p>Leave us a message! </p>
+                  <p>Give us a call or stop by!</p>
                 </div>
               </div>
             </div>
@@ -50,87 +44,131 @@ class Contact extends Component {
         {/* End Breadcrump Area */}
 
         {/* Start Contact Top Area  */}
-        <div className="rn-contact-top-area ptb--120 bg_color--5">
+        <div className="rn-contact-top-area pt--120 pb--60 bg_color--5">
           <div className="container">
             <div className="row justify-content-center">
-              {/* Start Single Address  */}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                <div className="rn-address">
+              <div className="col-lg-4 col-md-6 col-12 mb--30">
+                <div className="rn-address site-address-card">
                   <div className="icon">
                     <FiHeadphones />
                   </div>
                   <div className="inner">
                     <h4 className="title">Contact Info</h4>
                     <p>
-                      Phone: <a href="tel:+057 254 365 456">1-714-541-3883</a>
+                      Phone: <a href="tel:+17145413883">(714) 541-3883</a>
                     </p>
-                    <p>
-                      Fax: <a href="tel:+057 254 365 456">1-714-541-3781</a>
-                    </p>
+                    <p>Fax: (714) 541-3781</p>
                   </div>
                 </div>
               </div>
-              {/* End Single Address  */}
 
-              {/* Start Single Address  */}
-              {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50">
-                                <div className="rn-address">
-                                    <div className="icon">
-                                        <FiMail />
-                                    </div>
-                                    <div className="inner">
-                                        <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
-                                        <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
-                                    </div>
-                                </div>
-                            </div> */}
-              {/* End Single Address  */}
-
-              {/* Start Single Address  */}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                <div className="rn-address text-center">
+              <div className="col-lg-4 col-md-6 col-12 mb--30">
+                <div className="rn-address site-address-card">
                   <div className="icon">
                     <FiMapPin />
                   </div>
                   <div className="inner">
                     <h4 className="title">Location</h4>
                     <p>
-                      617 E 17th Steet <br /> Santa Ana, CA 92701
+                      <a
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${MAP_QUERY}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        617 E 17th St <br /> Santa Ana, CA 92701
+                      </a>
                     </p>
+                    <p>Next to Guaranty Chevrolet</p>
                   </div>
                 </div>
               </div>
-              {/* End Single Address  */}
             </div>
           </div>
         </div>
         {/* End Contact Top Area  */}
 
-        {/* Start Contact Page Area  */}
-        {/* <div className="rn-contact-page ptb--120 bg_color--1">
-                    <ContactTwo />
-                </div> */}
-        {/* End Contact Page Area  */}
+        {/* Start Hours Area  */}
+        <div className="pb--120 bg_color--5">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center mb--30">
+                  <h2 className="title">Hours</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-6 col-12 mb--30">
+                <div className="site-hours-card">
+                  <h4>Food Mart</h4>
+                  <ul className="cw-hours">
+                    <li>
+                      <span>Monday – Friday</span>
+                      <strong>Open 24 hours</strong>
+                    </li>
+                    <li>
+                      <span>Saturday</span>
+                      <strong>Open 24 hours</strong>
+                    </li>
+                    <li>
+                      <span>Sunday</span>
+                      <strong>Open 24 hours</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 mb--30">
+                <div className="site-hours-card">
+                  <h4>Check Cashing & Registration</h4>
+                  <ul className="cw-hours">
+                    <li>
+                      <span>Monday – Friday</span>
+                      <strong>10am – 7pm</strong>
+                    </li>
+                    <li>
+                      <span>Saturday</span>
+                      <strong>10am – 5pm</strong>
+                    </li>
+                    <li>
+                      <span>Sunday</span>
+                      <strong>Closed</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 mb--30">
+                <div className="site-hours-card">
+                  <h4>
+                    Hand Wash{" "}
+                    <span className="site-hours-qualifier">(Weather permitting)</span>
+                  </h4>
+                  <ul className="cw-hours">
+                    <li>
+                      <span>Winter</span>
+                      <strong>8am – 5pm</strong>
+                      <small>Last car at 4:30pm</small>
+                    </li>
+                    <li>
+                      <span>Summer</span>
+                      <strong>8am – 6pm</strong>
+                      <small>Last car at 5:30pm</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Hours Area  */}
 
         {/* Start Contact Map  */}
-        <div className="rn-contact-map-area position-relative">
-          <div style={{ height: "650px", width: "100%" }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{
-                key: "AIzaSyDozZNW8z3_mCqouukeUdH5YNQ_eQeKOLo",
-              }}
-              yesIWantToUseGoogleMapApiInternals={true}
-              defaultCenter={this.props.center}
-              defaultZoom={this.props.zoom}
-            >
-              <AnyReactComponent
-                lat={33.76063422414595}
-                lng={-117.86055142114375}
-                text="Santiago 76"
-              />
-            </GoogleMapReact>
-          </div>
+        <div className="rn-contact-map-area site-map">
+          <iframe
+            title="Map to Santiago 76"
+            src={`https://maps.google.com/maps?q=${MAP_QUERY}&z=16&output=embed`}
+            loading="lazy"
+            allowFullScreen
+          />
         </div>
         {/* End Contact Map  */}
 

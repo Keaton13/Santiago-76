@@ -1,98 +1,35 @@
 import React, { Component, Fragment } from "react";
-import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
 import Slider from "react-slick";
-import { slideSlick, slideSlick2 } from "../page-demo/script";
-import BlogContent from "../elements/blog/BlogContent";
+import { slideSlick } from "../page-demo/script";
 import Header from "../component/header/HeaderFive";
 import FooterTwo from "../component/footer/FooterTwo";
 import CallAction from "../elements/callaction/CallAction";
-import Team from "../blocks/team/TeamTwo";
-import Accordion01 from "../elements/Accordion";
 import Helmet from "../component/common/Helmet";
-import {
-  FiCast,
-  FiLayers,
-  FiUsers,
-  FiChevronUp,
-  FiCheck,
-} from "react-icons/fi";
-import CounterOne from "../elements/counters/CounterOne";
-import BrandOne from "../elements/Brand";
+import { FiChevronUp, FiCheck } from "react-icons/fi";
 import BrandTwo from "../elements/BrandTwo";
 
 const SlideList = [
   {
     textPosition: "text-right",
     bgImage: "bg_image--30",
-    category: "",
     title: "Santiago 76",
-    description: "",
     buttonText: "Contact Us",
     buttonLink: "/contact",
   },
   {
     textPosition: "text-left",
     bgImage: "bg_image--31",
-    category: "",
     title: "Food Mart",
-    description: "",
     buttonText: "Read More",
     buttonLink: "/service-details",
   },
   {
     textPosition: "text-right",
     bgImage: "bg_image--33",
-    category: "",
     title: "Car Wash",
-    description: "",
     buttonText: "Read More",
     buttonLink: "/service-details2",
-  },
-  // {
-  //   textPosition: "text-left",
-  //   bgImage: "bg_image--32",
-  //   category: "",
-  //   title: "Wireless Store",
-  //   description: "",
-  //   buttonText: "Read More",
-  //   buttonLink: "/service-details3",
-  // },
-];
-
-const SlideList2 = [
-  {
-    bgImage: "bg_image--26",
-  },
-  {
-    bgImage: "bg_image--25",
-  },
-  {
-    bgImage: "bg_image--24",
-  },
-  {
-    bgImage: "bg_image--23",
-  },
-];
-
-const ServiceListOne = [
-  {
-    icon: <FiCast />,
-    title: "Food Mart",
-    description:
-      "Easy and convenient, get money when you need it. Checks cashed as low as 1.25%.  Moneygram wire transfer and money orders also available.",
-  },
-  {
-    icon: <FiLayers />,
-    title: "Car Wash",
-    description:
-      "100% hand car wash and detailing. Exterior hand wash from $20, full service from $38, and 20¢ off per gallon of gas with any car wash.",
-  },
-  {
-    icon: <FiUsers />,
-    title: "Auto Registration",
-    description:
-      "Renew, replace, or transfer your vehicle registration and avoid a trip to the DMV.  Located inside Santiago Food Mart.",
   },
 ];
 
@@ -101,6 +38,7 @@ const starndardService = [
     image: "01",
     title: "Food Mart",
     link: "/service-details",
+    alt: "Snack aisles and drink coolers inside Santiago Food Mart",
     description:
       "Stop in for everything you need on the go. Cold drinks, snacks, and daily essentials all in one convenient location.",
   },
@@ -108,65 +46,67 @@ const starndardService = [
     image: "02",
     title: "Check Cashing & Auto Registration",
     link: "/service-details3",
+    alt: "Check cashing counter",
     description:
-      "Skip the DMV lines. We cash checks and handle your vehicle registration and renewals right instore, so you can stay road legal without the wait.",
+      "Skip the DMV lines. We cash checks and handle your vehicle registration and renewals right in store, so you can stay road legal without the wait.",
   },
   {
     image: "03",
     title: "Hand Wash",
     link: "/service-details2",
+    alt: "Santiago Hand Wash building and 76 sign",
     description:
       "We welcome you to Santiago Hand Wash. Since opening in 1996, we have grown to provide our customers with the best quality hand wash experience.",
   },
 ];
 
+// Photos of the 2022 remodel
+const NewStorePhotos = [
+  { src: "/assets/images/web/bg-image-24-1200.webp", alt: "Remodeled store with new floors and racks" },
+  { src: "/assets/images/web/corporate-02-1200.webp", alt: "Redesigned check cashing counter" },
+  { src: "/assets/images/web/about-8-1200.webp", alt: "New bathroom" },
+  { src: "/assets/images/web/bg-image-25-1200.webp", alt: "Coffee station and snacks" },
+  { src: "/assets/images/web/bg-image-26-1200.webp", alt: "Hot food counter" },
+];
+
+const NewStoreHighlights = [
+  "Redesigned Check Cashing",
+  "New Bathrooms",
+  "Re-Faced Coolers",
+  "All New Floors and Racks",
+];
+
+const CheckCashingHours = [
+  { day: "Monday – Friday", hours: "10am – 7pm" },
+  { day: "Saturday", hours: "10am – 5pm" },
+  { day: "Sunday", hours: "Closed" },
+];
+
+const photoSlider = {
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  lazyLoad: "ondemand",
+};
+
 class CorporateBusiness extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-  }
-  openModal() {
-    this.setState({ isOpen: true });
-  }
   render() {
-    var namesItemOne = [
-      "Monday: 10am - 7pm",
-      "Tuesday: 10am - 7pm",
-      "Wednesday: 10am - 7pm",
-      "Thursday: 10am - 7pm",
-      "Friday: 10am - 7pm",
-      "Saturday: 10am - 5pm",
-      "Sunday: Closed",
-    ];
-    var namesItemTwo = [
-      "Monday: 8am - 6pm",
-      "Tuesday: 8am - 6pm",
-      "Wednesday: 8am - 6pm",
-      "Thursday: 8am - 6pm",
-      "Friday: 8am - 6pm",
-      "Saturday: 8am - 6pm",
-      "Sunday: 8am - 6pm",
-    ];
-
-    const PostList = BlogContent.slice(0, 3);
-
     return (
       <Fragment>
-        <Helmet pageTitle="Santiago 76" />
-
-        {/* Start Header Area  */}
-        <Header
-          headerPosition="header--static logoresize"
-          logo="all-dark"
-          color="color-black"
+        <Helmet
+          pageTitle="Santiago 76 | Food Mart, Hand Car Wash & Check Cashing in Santa Ana"
+          description="Santiago 76 in Santa Ana: food mart, 100% hand car wash and detailing, check cashing and auto registration. Family owned since 1996."
         />
-        {/* End Header Area  */}
+
+        <Header headerPosition="header--static logoresize" color="color-black" />
 
         {/* Start Slider Area   */}
-        <div className="slider-wrapper">
+        <div className="slider-wrapper site-hero">
           <div className="slider-activation">
             <Slider className="rn-slick-dot dot-light" {...slideSlick}>
               {SlideList.map((value, index) => (
@@ -178,29 +118,15 @@ class CorporateBusiness extends Component {
                     <div className="row">
                       <div className="col-lg-12">
                         <div className={`inner ${value.textPosition}`}>
-                          {value.category ? <span>{value.category}</span> : ""}
-                          {value.title ? (
-                            <h1 className="title">{value.title}</h1>
-                          ) : (
-                            ""
-                          )}
-                          {value.description ? (
-                            <p className="description">{value.description}</p>
-                          ) : (
-                            ""
-                          )}
-                          {value.buttonText ? (
-                            <div className="slide-btn">
-                              <a
-                                className="rn-button-style--2 btn-solid"
-                                href={`${value.buttonLink}`}
-                              >
-                                {value.buttonText}
-                              </a>
-                            </div>
-                          ) : (
-                            ""
-                          )}
+                          <h1 className="title">{value.title}</h1>
+                          <div className="slide-btn">
+                            <a
+                              className="rn-button-style--2 btn-solid"
+                              href={value.buttonLink}
+                            >
+                              {value.buttonText}
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -212,213 +138,93 @@ class CorporateBusiness extends Component {
         </div>
         {/* End Slider Area   */}
 
-        {/* Start Service Area */}
-        {/* <div className="service-area ptb--30 bg_color--1">
-          <div className="container">
-            <div className="row service-one-wrapper">
-              {ServiceListOne.map((val, i) => (
-                <div
-                  className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
-                  key={i}
-                >
-                  <a className="text-center">
-                    <div className="service service__style--2">
-                      <div className="icon">{val.icon}</div>
-                      <div className="content">
-                        <h3 className="title">{val.title}</h3>
-                        <p>{val.description}</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
-        {/* End Service Area */}
-
         {/* Start Featured Service Area  */}
         <div className="rn-featured-service-area pt--90 pb--120 bg_color--5">
           <div className="container">
             <div className="row">
-              {/* Start Single Service  */}
               <div className="col-lg-3 col-md-6 col-12 mt--30">
                 <div className="section-title">
                   <h2 className="title">Services</h2>
                   <p>
-                    We do it all! From Hand Wash, Check Cashing,
-                    and Auto Registration all in one location.
+                    We do it all! From Hand Wash, Check Cashing, and Auto
+                    Registration all in one location.
                   </p>
-                  <div className="service-btn">
-                    <a className="btn-transparent rn-btn-dark" href="/service">
-                      <span className="text"></span>
-                    </a>
-                  </div>
                 </div>
               </div>
-              {/* End Single Service  */}
-
-              {/* Start Single Service  */}
               <div className="col-lg-9">
                 <div className="row">
                   {starndardService.map((value, index) => (
                     <div className="col-lg-4 col-md-4 mt--30" key={index}>
-                      <div className="standard-service">
+                      <a className="standard-service site-service-card" href={value.link}>
                         <div className="thumbnai">
                           <img
-                            src={`/assets/images/featured/corporate-${value.image}.jpg`}
-                            alt="Corporate Images"
+                            src={`/assets/images/web/corporate-${value.image}-700.webp`}
+                            alt={value.alt}
+                            loading="lazy"
                           />
                         </div>
                         <div className="content">
-                          <h3>
-                            <a href={value.link}>{value.title}</a>
-                          </h3>
+                          <h3>{value.title}</h3>
                           <p>{value.description}</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   ))}
                 </div>
               </div>
-              {/* End Single Service  */}
             </div>
           </div>
         </div>
         {/* End Featured Service Area  */}
 
-        {/* Start Counterup Area */}
-        {/* <div
-          className="counterup-area pb--80 pt--40 bg_image bg_image--17 theme-text-white"
-          data-black-overlay="7"
-        >
-          <div className="container">
-            <CounterOne />
-          </div>
-        </div> */}
-        {/* End Counterup Area */}
-
-        {/* Start About Area  */}
+        {/* Start New Store Area  */}
         <div className="rn-about-area ptb--120 bg_color--1">
           <div className="container">
             <div className="row row--35 align-items-center">
               <div className="col-lg-6">
-                <div className="thumbnail mt-3 h-75">
-                  <img
-                    className="w-100"
-                    src="/assets/images/about/about-8.jpg"
-                    alt="About Images"
-                  />
+                <div className="site-photo-slider">
+                  <Slider className="rn-slick-dot dot-light" {...photoSlider}>
+                    {NewStorePhotos.map((photo) => (
+                      <div key={photo.src}>
+                        <img src={photo.src} alt={photo.alt} />
+                      </div>
+                    ))}
+                  </Slider>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-6 mt_md--40 mt_sm--40">
                 <div className="about-inner inner">
                   <div className="section-title">
-                    <h2 className="title">Checkout Our New Store!</h2>
+                    <h2 className="title">Check Out Our New Store!</h2>
                     <p>
                       Complete re-model finished in 2022 for a new and exciting
                       look.
                     </p>
                   </div>
-                  <div className="accordion-wrapper mt--30">
-                    <Accordion01 />
-                  </div>
-                  <div className="about-button mt--50">
+                  <ul className="list-style--1 site-checklist mt--30">
+                    {NewStoreHighlights.map((item) => (
+                      <li key={item}>
+                        <FiCheck /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="about-button mt--40">
                     <a className="rn-button-style--2 btn-solid" href="/about">
                       See our history
                     </a>
                   </div>
-                  {/* <div className="thumbnail mt--50">
-                    <img
-                      className="w-100"
-                      src="/assets/images/about/about-4.jpg"
-                      alt="About Images"
-                    />
-                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* End About Area  */}
-
-        {/* Start New Store Image Slider */}
-        <div className="slider-wrapper">
-          <div className="slider-activation w-75 m-auto">
-            <Slider className="rn-slick-dot dot-light" {...slideSlick2}>
-              {SlideList2.map((value, index) => (
-                <div
-                  className={`slide slide-style-2 slider-box-content without-overlay d-flex align-items-center justify-content-center bg_image ${value.bgImage}`}
-                  key={index}
-                >
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className={`inner ${value.textPosition}`}>
-                          {value.category ? <span>{value.category}</span> : ""}
-                          {value.title ? (
-                            <h1 className="title">{value.title}</h1>
-                          ) : (
-                            ""
-                          )}
-                          {value.description ? (
-                            <p className="description">{value.description}</p>
-                          ) : (
-                            ""
-                          )}
-                          {value.buttonText ? (
-                            <div className="slide-btn">
-                              <a
-                                className="rn-button-style--2 btn-solid"
-                                href={`${value.buttonLink}`}
-                              >
-                                {value.buttonText}
-                              </a>
-                            </div>
-                          ) : (
-                            ""
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-        {/* End New Store Image Slider */}
-
-        {/* Start Team Area  */}
-        {/* <div className="rn-team-area ptb--120 bg_color--1">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
-                  <h2 className="title">Our Team</h2>
-                  <p>
-                    We have the best team at Santiago 76 that will take care of
-                    all your needs.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <Team
-                column="col-lg-3 col-md-6 col-sm-6 col-12 mt--30"
-                teamStyle=""
-                item="4"
-              />
-            </div>
-          </div>
-        </div> */}
-        {/* End Team Area  */}
+        {/* End New Store Area  */}
 
         {/* Start About Area  */}
         <div className="rn-about-area ptb--120 bg_color--5">
           <div className="container">
             <div className="row row--35 align-items-center">
-              <div className="col-lg-6 order-2 order-lg-1">
+              <div className="col-lg-7 order-2 order-lg-1 mt_md--40 mt_sm--40">
                 <div className="about-inner inner">
                   <div className="section-title">
                     <h2 className="title">About Us</h2>
@@ -429,10 +235,10 @@ class CorporateBusiness extends Component {
                       operated, we are known for our quality control, your 100%
                       satisfaction, and being committed to quality service and
                       value. Being a family owned business allows us to adapt to
-                      the communities request on a daily basis. We appreciate
-                      our customers input on what they would like to see in our
+                      the community's requests on a daily basis. We appreciate
+                      our customers' input on what they would like to see in our
                       store to help make our corner a higher quality place of
-                      business
+                      business.
                     </p>
                     <p className="description">
                       Most of our team here at Santiago Food Mart and Hand Wash
@@ -442,69 +248,51 @@ class CorporateBusiness extends Component {
                       is something you need, please don’t hesitate to ask.
                     </p>
                   </div>
-                  <div className="mt--30">
-                    <h3>Check Cashing / Auto Registration Hours</h3>
-                    <ul className="list-style--1">
-                      {namesItemOne.map((name, index) => {
-                        return (
-                          <li key={index}>
-                            <FiCheck /> {name}
+
+                  <div className="row mt--20">
+                    <div className="col-md-6 mt--20">
+                      <div className="site-hours-card">
+                        <h4>Check Cashing / Auto Registration Hours</h4>
+                        <ul className="cw-hours">
+                          {CheckCashingHours.map((h) => (
+                            <li key={h.day}>
+                              <span>{h.day}</span>
+                              <strong>{h.hours}</strong>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md-6 mt--20">
+                      <div className="site-hours-card">
+                        <h4>
+                          Car Wash Hours{" "}
+                          <span className="site-hours-qualifier">(Weather permitting)</span>
+                        </h4>
+                        <ul className="cw-hours">
+                          <li>
+                            <span>Winter</span>
+                            <strong>8am – 5pm</strong>
+                            <small>Last car at 4:30pm</small>
                           </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                  <div className="mt--30">
-                    <h3 className="mb-0">Car Wash Hours</h3>
-                    <h6 className="mb-1">(Weather Permitting)</h6>
-                    <ul className="list-style--1">
-                      {/* <li>
-                        <strong>
-                          Winter Hours: 8am - 5pm (Last Car at 4:30pm)
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>Summer Hours 8am-6pm (Last Car at 5:30pm)</strong>
-                      </li> */}
-                      <li>
-                      <h5 className="mb-0 mt-3">Winter Hours</h5>
-                        <FiCheck />8am - 5pm (Last Car at 4:30pm) 
-                      </li>
-                      <li>
-                        <h5 className="mb-0"> Summer Hours</h5>
-                        <FiCheck />8am-6pm (Last Car at 5:30pm)
-                      </li>
-                      {/* {namesItemTwo.map((name, index) => {
-                        return (
-                          <li key={index}>
-                            <FiCheck /> {name}
+                          <li>
+                            <span>Summer</span>
+                            <strong>8am – 6pm</strong>
+                            <small>Last car at 5:30pm</small>
                           </li>
-                        );
-                      })} */}
-                    </ul>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 order-1 order-lg-2">
-                <div className="thumbnail position-relative">
-                  <img
-                    className="w-100"
-                    src="/assets/images/about/about-1.png"
-                    alt="About Images"
-                  />
-                  <ModalVideo
-                    channel="youtube"
-                    isOpen={this.state.isOpen}
-                    videoId="ZOoVOfieAF8"
-                    onClose={() => this.setState({ isOpen: false })}
-                  />
-                  {/* <button
-                    className="video-popup position-top-center theme-color"
-                    onClick={this.openModal}
-                  >
-                    <span className="play-icon"></span>
-                  </button> */}
-                </div>
+              <div className="col-lg-5 order-1 order-lg-2">
+                <img
+                  className="w-100 site-rounded"
+                  src="/assets/images/web/about-1-1200.webp"
+                  alt="76 gas pump at Santiago 76"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -523,63 +311,9 @@ class CorporateBusiness extends Component {
         </div>
         {/* End Brand Area  */}
 
-        {/* Start Pricing Tbale Area  */}
-
-        {/* End Pricing Tbale Area  */}
-
-        {/* Start Blog Area */}
-        {/* <div className="rn-blog-area pt--120 pb--80 bg_color--1">
-          <div className="container">
-            <div className="row align-items-end">
-              <div className="col-lg-12">
-                <div className="section-title service-style--3 text-center">
-                  <h2 className="title">Latest News</h2>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row mt--60">
-              {PostList.map((value, i) => (
-                <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                  <div className="blog blog-style--1">
-                    <div className="thumbnail">
-                      <a href="/blog-details">
-                        <img
-                          className="w-100"
-                          src={`/assets/images/blog/blog-${value.images}.jpg`}
-                          alt="Blog Images"
-                        />
-                      </a>
-                    </div>
-                    <div className="content">
-                      <p className="blogtype">{value.category}</p>
-                      <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
-                      </h4>
-                      <div className="blog-btn">
-                        <a className="rn-btn text-white" href="/blog-details">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
-        {/* End Blog Area */}
-
-        {/* Start call To Action  */}
         <CallAction />
-        {/* End call To Action  */}
 
-        {/* Start Footer Style  */}
         <FooterTwo />
-        {/* End Footer Style  */}
 
         {/* Start Back To Top */}
         <div className="backto-top">
@@ -592,4 +326,5 @@ class CorporateBusiness extends Component {
     );
   }
 }
+
 export default CorporateBusiness;

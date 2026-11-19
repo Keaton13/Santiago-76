@@ -1,36 +1,24 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
-import { FiCheck, FiChevronUp } from "react-icons/fi";
+import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
 class ServiceDetails3 extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-  }
-  openModal() {
-    this.setState({ isOpen: true });
-  }
   render() {
-    var namesItemOne = [
-      "Monday: 10am - 7pm",
-      "Tuesday: 10am - 7pm",
-      "Wednesday: 10am - 7pm",
-      "Thursday: 10am - 7pm",
-      "Friday: 10am - 7pm",
-      "Saturday: 10am - 5pm",
-      "Sunday: Closed",
+    const CheckCashingHours = [
+      { day: "Monday – Friday", hours: "10am – 7pm" },
+      { day: "Saturday", hours: "10am – 5pm" },
+      { day: "Sunday", hours: "Closed" },
     ];
     return (
       <React.Fragment>
         {/* Start Pagehelmet  */}
-        <PageHelmet pageTitle="Service Details" />
+        <PageHelmet
+          pageTitle="Check Cashing & Auto Registration | Santiago 76"
+          description="Payroll and tax refund check cashing, MoneyGram, money orders, and auto registration renewals, transfers, duplicates and custom plates inside Santiago Food Mart in Santa Ana."
+        />
         {/* End Pagehelmet  */}
 
         <Header
@@ -71,9 +59,9 @@ class ServiceDetails3 extends Component {
                       <div className="col-lg-6 col-12">
                         <div className="thumb">
                           <img
-                            className="w-100"
-                            src="/assets/images/featured/corporate-02.jpg"
-                            alt="Service Images"
+                            className="w-100 site-rounded"
+                            src="/assets/images/web/corporate-02-1200.webp"
+                            alt="Check cashing counter inside Santiago Food Mart"
                           />
                         </div>
                       </div>
@@ -90,37 +78,13 @@ class ServiceDetails3 extends Component {
                           </p>
                           <br/>
                     <h3>Check Cashing / Auto Registration Hours</h3>
-                          {/* <ul className="list-style--1">
-                            {namesItemOne.map((name, index) => {
-                              return (
-                                <li key={index}>
-                                  <h5><FiCheck /> {name}</h5>
-                                </li>
-                              );
-                            })}
-                          </ul> */}
-                          <ul className="list-style--1">
-                            <li>
-                              <h5><FiCheck /> <strong>Monday:</strong> 10am - 7pm</h5>
-                            </li>
-                            <li>
-                             <h5><FiCheck /> <strong>Tuesday:</strong> 10am - 7pm</h5>
-                            </li>
-                            <li>
-                              <h5><FiCheck /><strong>Wednesday:</strong> 10am - 7pm</h5>
-                            </li>
-                            <li>
-                              <h5><FiCheck /><strong>Thursday:</strong> 10am - 7pm</h5>
-                            </li>
-                            <li>
-                              <h5><FiCheck /><strong>Friday:</strong> 10am - 7pm</h5>
-                            </li>
-                            <li>
-                              <h5><FiCheck /><strong>Saturday:</strong> 10am - 5pm</h5>
-                            </li>
-                            <li>
-                              <h5><FiCheck /><strong>Sunday:</strong> Closed</h5>
-                            </li>
+                          <ul className="cw-hours mt--20">
+                            {CheckCashingHours.map((h) => (
+                              <li key={h.day}>
+                                <span>{h.day}</span>
+                                <strong>{h.hours}</strong>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -144,24 +108,12 @@ class ServiceDetails3 extends Component {
                         </div>
                       </div>
                       <div className="col-lg-6 col-12 order-1 order-lg-2">
-                        <div className="thumb position-relative">
+                        <div className="thumb">
                           <img
-                            className="w-100"
-                            src="/assets/images/service/service-4.JPG"
-                            alt="Service Images"
+                            className="w-100 site-rounded"
+                            src="/assets/images/web/service-4-1200.webp"
+                            alt="Auto registration price sign: renewal $45, transfers $55, duplicates $55, custom plates $50"
                           />
-                          <ModalVideo
-                            channel="youtube"
-                            isOpen={this.state.isOpen}
-                            videoId="ZOoVOfieAF8"
-                            onClose={() => this.setState({ isOpen: false })}
-                          />
-                          {/* <button
-                            className="video-popup"
-                            onClick={this.openModal}
-                          >
-                            <span className="play-icon"></span>
-                          </button> */}
                         </div>
                       </div>
                     </div>

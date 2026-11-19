@@ -123,6 +123,15 @@ class ServiceDetails2 extends Component {
     if (this.observer) this.observer.disconnect();
   }
 
+  // Scroll with JavaScript rather than relying on the "#prices" jump, which
+  // iPhone Safari can ignore on this template.
+  scrollToPrices = (e) => {
+    const target = document.getElementById("prices");
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   openPhoto(i) {
     this.setState({ lightboxOpen: true, photoIndex: i });
   }
@@ -159,7 +168,11 @@ class ServiceDetails2 extends Component {
                   </h2>
                   <p>100% hand car wash in Santa Ana since 1996</p>
                   <div className="cw-hero-buttons">
-                    <a className="rn-button-style--2 btn-solid" href="#prices">
+                    <a
+                      className="rn-button-style--2 btn-solid"
+                      href="#prices"
+                      onClick={this.scrollToPrices}
+                    >
                       <span>See Prices</span>
                     </a>
                     <a className="rn-button-style--2 cw-btn-light" href={PHONE_LINK}>
